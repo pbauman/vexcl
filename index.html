@@ -59,6 +59,7 @@
 <li><a href="#builtin-operations">Builtin operations</a></li>
 <li><a href="#element-indices">Element indices</a></li>
 <li><a href="#user-defined-functions">User-defined functions</a></li>
+<li><a href="#tagged-terminals">Tagged terminals</a></li>
 <li><a href="#random-number-generation">Random number generation</a></li>
 <li><a href="#permutations">Permutations</a></li>
 <li><a href="#slicing">Slicing</a></li>
@@ -157,12 +158,18 @@
 <div class="fragment"><div class="line"><a class="code" href="operations_8hpp.html#aff85c71f5e6716591cf5948f92e093b3" title="Macro to declare a user function.">VEX_FUNCTION</a>(squared_radius, <span class="keywordtype">double</span>(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>), <span class="stringliteral">&quot;return prm1 * prm1 + prm2 * prm2;&quot;</span>);</div>
 <div class="line">Z = sqrt(squared_radius(X, Y));</div>
 </div><!-- fragment --><p> The resulting <code>squared_radius</code> function object is stateless; only its type is used for kernel generation. Hence, it is safe to put commonly used functions in global scope.</p>
-<p>Custom functions may be used not only for convenience, but also for performance reasons. The above example could in principle be rewritten as: </p>
-<div class="fragment"><div class="line">Z = sqrt(X * X + Y * Y);</div>
-</div><!-- fragment --><p> The drawback of the latter variant is that <code>X</code> and <code>Y</code> will be read <em>twice</em>.</p>
 <p>Note that any valid vector expression may be passed as a function parameter: </p>
 <div class="fragment"><div class="line">Z = squared_radius(sin(X + Y), cos(X - Y));</div>
-</div><!-- fragment --><h3><a class="anchor" id="random-number-generation"></a>Random number generation</h3>
+</div><!-- fragment --><p>Custom functions may be used not only for convenience, but also for performance reasons. The above example could in principle be rewritten as: </p>
+<div class="fragment"><div class="line">Z = sqrt(X * X + Y * Y);</div>
+</div><!-- fragment --><p> The drawback of the latter variant is that <code>X</code> and <code>Y</code> will be read <em>twice</em>.</p>
+<h3><a class="anchor" id="tagged-terminals"></a>Tagged terminals</h3>
+<p>Code snippet from the last paragraph is ineffective because compiler can not tell if any two terminals in an expression tree are actually referring to the same data. But programmers often have this information. VexCL allows to pass this knowledge to compiler by tagging terminals that with unique tags. Programmer guarantees that any two terminals with matching tags are referencing same data.</p>
+<p>Below is more effective variant of the above example: </p>
+<div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespacevex.html#af96df2c4cc011d76f6a204341cbbc87c" title="Tags terminal with a unique (in a single expression) tag.">vex::tag</a>;</div>
+<div class="line">Z = sqrt(tag&lt;1&gt;(X) * tag&lt;1&gt;(X) + tag&lt;2&gt;(Y) * tag&lt;2&gt;(Y));</div>
+</div><!-- fragment --><p> Here, the generated kernel will have one parameter per vectors <code>X</code> and <code>Y</code>.</p>
+<h3><a class="anchor" id="random-number-generation"></a>Random number generation</h3>
 <p>VexCL provides counter-based random number generators from <a href="http://www.deshawresearch.com/resources_random123.html">Random123</a> suite, in which Nth random number is obtained by applying a stateless mixing function to N instead of the conventional approach of using N iterations of a stateful transformation. This technique is easily parallelizable and is well suited for use in GPGPU applications.</p>
 <p>For integral types, generated values span the complete range; for floating point types, generated values are in [0,1] interval.</p>
 <p>In order to use a random number sequence in a vector expression, user has to declare an instance of either <code><a class="el" href="structvex_1_1Random.html" title="A random generator.">vex::Random</a></code> or <code><a class="el" href="structvex_1_1RandomNormal.html" title="Returns normal distributed random numbers.">vex::RandomNormal</a></code> class template as in the following example: </p>
