@@ -1,0 +1,11 @@
+<map id="vexcl/mpi/spmat.hpp" name="vexcl/mpi/spmat.hpp">
+<area shape="rect" id="node11" href="$spmat_8hpp.html" title="OpenCL sparse matrix." alt="" coords="2188,80,2314,107"/>
+<area shape="rect" id="node121" href="$gather_8hpp.html" title="Gather scattered points from OpenCL device vector." alt="" coords="36,229,162,256"/>
+<area shape="rect" id="node124" href="$mpi_2util_8hpp.html" title="MPI related utilities." alt="" coords="2835,80,2966,107"/>
+<area shape="rect" id="node28" href="$vector_8hpp.html" title="OpenCL device vector." alt="" coords="1054,155,1177,181"/>
+<area shape="rect" id="node41" href="$operations_8hpp.html" title="Set of operations to be used in vector expressions." alt="" coords="607,229,760,256"/>
+<area shape="rect" id="node52" href="$util_8hpp.html" title="OpenCL general utilities." alt="" coords="924,312,1028,339"/>
+<area shape="rect" id="node76" href="$profiler_8hpp.html" title="Simple OpenCL/Host profiler." alt="" coords="2289,312,2417,339"/>
+<area shape="rect" id="node102" href="$devlist_8hpp.html" title="OpenCL device enumeration." alt="" coords="1315,229,1441,256"/>
+<area shape="rect" id="node74" href="$types_8hpp.html" title="C++ sugar for OpenCL vector types, eg. cl_float4, operator+." alt="" coords="845,403,965,429"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="vexcl/spmat.hpp" name="vexcl/spmat.hpp">
+<area shape="rect" id="node21" href="$vector_8hpp.html" title="OpenCL device vector." alt="" coords="1786,80,1909,107"/>
+<area shape="rect" id="node34" href="$operations_8hpp.html" title="Set of operations to be used in vector expressions." alt="" coords="1498,155,1651,181"/>
+<area shape="rect" id="node45" href="$util_8hpp.html" title="OpenCL general utilities." alt="" coords="2819,237,2923,264"/>
+<area shape="rect" id="node69" href="$profiler_8hpp.html" title="Simple OpenCL/Host profiler." alt="" coords="777,237,905,264"/>
+<area shape="rect" id="node95" href="$devlist_8hpp.html" title="OpenCL device enumeration." alt="" coords="2097,155,2223,181"/>
+<area shape="rect" id="node67" href="$types_8hpp.html" title="C++ sugar for OpenCL vector types, eg. cl_float4, operator+." alt="" coords="2232,328,2352,355"/>
+</map>

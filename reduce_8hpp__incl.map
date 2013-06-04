@@ -1,0 +1,8 @@
+<map id="vexcl/reduce.hpp" name="vexcl/reduce.hpp">
+<area shape="rect" id="node11" href="$vector_8hpp.html" title="OpenCL device vector." alt="" coords="2690,80,2813,107"/>
+<area shape="rect" id="node27" href="$operations_8hpp.html" title="Set of operations to be used in vector expressions." alt="" coords="1311,155,1464,181"/>
+<area shape="rect" id="node38" href="$util_8hpp.html" title="OpenCL general utilities." alt="" coords="2865,237,2969,264"/>
+<area shape="rect" id="node62" href="$profiler_8hpp.html" title="Simple OpenCL/Host profiler." alt="" coords="825,237,953,264"/>
+<area shape="rect" id="node89" href="$devlist_8hpp.html" title="OpenCL device enumeration." alt="" coords="2149,155,2275,181"/>
+<area shape="rect" id="node60" href="$types_8hpp.html" title="C++ sugar for OpenCL vector types, eg. cl_float4, operator+." alt="" coords="2635,328,2755,355"/>
+</map>

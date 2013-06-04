@@ -1,0 +1,21 @@
+<map id="vexcl/vexcl.hpp" name="vexcl/vexcl.hpp">
+<area shape="rect" id="node7" href="$devlist_8hpp.html" title="OpenCL device enumeration." alt="" coords="2183,304,2309,331"/>
+<area shape="rect" id="node49" href="$element__index_8hpp.html" title="Element index for use in vector expressions." alt="" coords="3533,229,3712,256"/>
+<area shape="rect" id="node60" href="$vector_8hpp.html" title="OpenCL device vector." alt="" coords="2826,229,2949,256"/>
+<area shape="rect" id="node72" href="$profiler_8hpp.html" title="Simple OpenCL/Host profiler." alt="" coords="1104,304,1232,331"/>
+<area shape="rect" id="node93" href="$vector__view_8hpp.html" title="Provides sub&#45;view for an existing vex::vector." alt="" coords="3245,155,3403,181"/>
+<area shape="rect" id="node100" href="$tagged__terminal_8hpp.html" title="Tagged terminal wrapper." alt="" coords="4738,80,4928,107"/>
+<area shape="rect" id="node102" href="$multivector_8hpp.html" title="OpenCL device multi&#45;vector." alt="" coords="3013,155,3168,181"/>
+<area shape="rect" id="node117" href="$reduce_8hpp.html" title="OpenCL vector reduction." alt="" coords="538,155,667,181"/>
+<area shape="rect" id="node124" href="$spmat_8hpp.html" title="OpenCL sparse matrix." alt="" coords="4218,155,4344,181"/>
+<area shape="rect" id="node138" href="$stencil_8hpp.html" title="Stencil convolution." alt="" coords="2593,155,2719,181"/>
+<area shape="rect" id="node145" href="$gather_8hpp.html" title="Gather scattered points from OpenCL device vector." alt="" coords="5,304,131,331"/>
+<area shape="rect" id="node148" href="$random_8hpp.html" title="Random generators." alt="" coords="4953,80,5088,107"/>
+<area shape="rect" id="node154" href="$fft_8hpp.html" title="Fast Fourier Transformation." alt="" coords="2543,80,2641,107"/>
+<area shape="rect" id="node162" href="$generator_8hpp.html" title="OpenCL kernel generator." alt="" coords="3893,229,4040,256"/>
+<area shape="rect" id="node21" href="$util_8hpp.html" title="OpenCL general utilities." alt="" coords="3229,387,3333,413"/>
+<area shape="rect" id="node53" href="$operations_8hpp.html" title="Set of operations to be used in vector expressions." alt="" coords="3483,304,3636,331"/>
+<area shape="rect" id="node150" href="$philox_8hpp.html" title="Philox random generator." alt="" coords="4835,155,5011,181"/>
+<area shape="rect" id="node152" href="$threefry_8hpp.html" title="Threefry random generator." alt="" coords="5035,155,5223,181"/>
+<area shape="rect" id="node158" href="$plan_8hpp.html" title="FFT plan, stores kernels and buffers for one configuration." alt="" coords="2439,155,2568,181"/>
+</map>
