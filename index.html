@@ -164,7 +164,7 @@
 <div class="fragment"><div class="line">Z = sqrt(X * X + Y * Y);</div>
 </div><!-- fragment --><p> The drawback of the latter variant is that <code>X</code> and <code>Y</code> will be read <em>twice</em>.</p>
 <h3><a class="anchor" id="tagged-terminals"></a>Tagged terminals</h3>
-<p>Code snippet from the last paragraph is ineffective because compiler can not tell if any two terminals in an expression tree are actually referring to the same data. But programmers often have this information. VexCL allows to pass this knowledge to compiler by tagging terminals that with unique tags. Programmer guarantees that any two terminals with matching tags are referencing same data.</p>
+<p>Code snippet from the last paragraph is ineffective because compiler can not tell if any two terminals in an expression tree are actually referring to the same data. But programmers often have this information. VexCL allows to pass this knowledge to compiler by tagging terminals with unique tags. Programmer guarantees that any two terminals with matching tags are referencing same data.</p>
 <p>Below is more effective variant of the above example: </p>
 <div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="namespacevex.html#af96df2c4cc011d76f6a204341cbbc87c" title="Tags terminal with a unique (in a single expression) tag.">vex::tag</a>;</div>
 <div class="line">Z = sqrt(tag&lt;1&gt;(X) * tag&lt;1&gt;(X) + tag&lt;2&gt;(Y) * tag&lt;2&gt;(Y));</div>
