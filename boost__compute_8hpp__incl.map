@@ -1,8 +1,8 @@
 <map id="vexcl/external/boost_compute.hpp" name="vexcl/external/boost_compute.hpp">
-<area shape="rect" id="node5" href="$vector_8hpp.html" title="OpenCL device vector." alt="" coords="2142,96,2265,123"/>
-<area shape="rect" id="node23" href="$operations_8hpp.html" title="Set of operations to be used in vector expressions." alt="" coords="1451,171,1604,197"/>
-<area shape="rect" id="node34" href="$util_8hpp.html" title="OpenCL general utilities." alt="" coords="2799,253,2903,280"/>
-<area shape="rect" id="node58" href="$profiler_8hpp.html" title="Simple OpenCL/Host profiler." alt="" coords="809,253,937,280"/>
-<area shape="rect" id="node85" href="$devlist_8hpp.html" title="OpenCL device enumeration." alt="" coords="2141,171,2267,197"/>
-<area shape="rect" id="node56" href="$types_8hpp.html" title="C++ sugar for OpenCL vector types, eg. cl_float4, operator+." alt="" coords="2424,344,2544,371"/>
+<area shape="rect" id="node5" href="$vector_8hpp.html" title="OpenCL device vector." alt="" coords="646,96,769,123"/>
+<area shape="rect" id="node23" href="$operations_8hpp.html" title="Set of operations to be used in vector expressions." alt="" coords="845,171,997,197"/>
+<area shape="rect" id="node34" href="$util_8hpp.html" title="OpenCL general utilities." alt="" coords="448,253,552,280"/>
+<area shape="rect" id="node58" href="$profiler_8hpp.html" title="Simple OpenCL/Host profiler." alt="" coords="2064,253,2192,280"/>
+<area shape="rect" id="node85" href="$devlist_8hpp.html" title="OpenCL device enumeration." alt="" coords="1402,171,1528,197"/>
+<area shape="rect" id="node56" href="$types_8hpp.html" title="C++ sugar for OpenCL vector types, eg. cl_float4, operator+." alt="" coords="1029,344,1149,371"/>
 </map>

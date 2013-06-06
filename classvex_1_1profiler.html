@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>VexCL: vex::profiler Class Reference</title>
+<title>VexCL: vex::profiler&lt; Clock, Avg &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -51,7 +51,7 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classvex_1_1profiler-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">vex::profiler Class Reference</div>  </div>
+<div class="title">vex::profiler&lt; Clock, Avg &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -62,35 +62,47 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1c69fa025061638275a75c0c09bcfaa7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1profiler.html#a1c69fa025061638275a75c0c09bcfaa7">profiler</a> (const std::vector&lt; cl::CommandQueue &gt; &amp;queue=std::vector&lt; cl::CommandQueue &gt;(), const std::string &amp;name=&quot;Profile&quot;)</td></tr>
-<tr class="memdesc:a1c69fa025061638275a75c0c09bcfaa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a1c69fa025061638275a75c0c09bcfaa7">More...</a><br/></td></tr>
-<tr class="separator:a1c69fa025061638275a75c0c09bcfaa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b287d3d7d48cac0950418a33205255e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1profiler.html#a6b287d3d7d48cac0950418a33205255e">tic_cpu</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:a6b287d3d7d48cac0950418a33205255e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a CPU timer.  <a href="#a6b287d3d7d48cac0950418a33205255e">More...</a><br/></td></tr>
-<tr class="separator:a6b287d3d7d48cac0950418a33205255e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a489e82323e1d9c0fe021e591b0a983b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1profiler.html#a489e82323e1d9c0fe021e591b0a983b9">tic_cl</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:a489e82323e1d9c0fe021e591b0a983b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueues a marker into each of the provided queues.  <a href="#a489e82323e1d9c0fe021e591b0a983b9">More...</a><br/></td></tr>
-<tr class="separator:a489e82323e1d9c0fe021e591b0a983b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f337c2afb72e3fb7a8f8dc6e13136a7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1profiler.html#a4f337c2afb72e3fb7a8f8dc6e13136a7">toc</a> (const std::string &amp;)</td></tr>
-<tr class="memdesc:a4f337c2afb72e3fb7a8f8dc6e13136a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns time since last tic.  <a href="#a4f337c2afb72e3fb7a8f8dc6e13136a7">More...</a><br/></td></tr>
-<tr class="separator:a4f337c2afb72e3fb7a8f8dc6e13136a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f18440653a0297cd837eba51fd63d93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f18440653a0297cd837eba51fd63d93"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1profiler.html#a9f18440653a0297cd837eba51fd63d93">print</a> (std::ostream &amp;out)</td></tr>
-<tr class="memdesc:a9f18440653a0297cd837eba51fd63d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs profile to the provided stream. <br/></td></tr>
-<tr class="separator:a9f18440653a0297cd837eba51fd63d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df5a3d7a61ab5d5334fc3b8fee03b54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1profiler.html#a0df5a3d7a61ab5d5334fc3b8fee03b54">profiler</a> (const std::vector&lt; cl::CommandQueue &gt; &amp;queue=std::vector&lt; cl::CommandQueue &gt;(), const std::string &amp;name=&quot;Profile&quot;)</td></tr>
+<tr class="memdesc:a0df5a3d7a61ab5d5334fc3b8fee03b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a0df5a3d7a61ab5d5334fc3b8fee03b54">More...</a><br/></td></tr>
+<tr class="separator:a0df5a3d7a61ab5d5334fc3b8fee03b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215aaf3b48a9f3966826cbf24d190562"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1profiler.html#a215aaf3b48a9f3966826cbf24d190562">tic_cpu</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a215aaf3b48a9f3966826cbf24d190562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a CPU timer.  <a href="#a215aaf3b48a9f3966826cbf24d190562">More...</a><br/></td></tr>
+<tr class="separator:a215aaf3b48a9f3966826cbf24d190562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dbd3d08cc68545839d3bd0b62220e91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1profiler.html#a3dbd3d08cc68545839d3bd0b62220e91">tic_cl</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a3dbd3d08cc68545839d3bd0b62220e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueues a marker into each of the provided queues.  <a href="#a3dbd3d08cc68545839d3bd0b62220e91">More...</a><br/></td></tr>
+<tr class="separator:a3dbd3d08cc68545839d3bd0b62220e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b47419611203c95e296396865b18b87"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1profiler.html#a8b47419611203c95e296396865b18b87">toc</a> (const std::string &amp;)</td></tr>
+<tr class="memdesc:a8b47419611203c95e296396865b18b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns time since last tic.  <a href="#a8b47419611203c95e296396865b18b87">More...</a><br/></td></tr>
+<tr class="separator:a8b47419611203c95e296396865b18b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abced1fb001419860ce65330812e88311"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abced1fb001419860ce65330812e88311"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1profiler.html#abced1fb001419860ce65330812e88311">print</a> (std::ostream &amp;out)</td></tr>
+<tr class="memdesc:abced1fb001419860ce65330812e88311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs profile to the provided stream. <br/></td></tr>
+<tr class="separator:abced1fb001419860ce65330812e88311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class for gathering and printing OpenCL and Host profiling info. </p>
+<div class="textblock"><h3>template&lt;class Clock = boost::chrono::high_resolution_clock, AvgKind Avg = AvgMedian&gt;<br/>
+class vex::profiler&lt; Clock, Avg &gt;</h3>
+
+<p>Class for gathering and printing OpenCL and Host profiling info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Clock</td><td>class that provides interface compatible with either boost::chrono or std::chrono clocks. </td></tr>
+    <tr><td class="paramname">Avg</td><td>Kind of averaging used. AvgMedian is more stable, but may have high overhead when profiling is made in a loop. </td></tr>
+  </table>
+  </dd>
+</dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a1c69fa025061638275a75c0c09bcfaa7"></a>
+<a class="anchor" id="a0df5a3d7a61ab5d5334fc3b8fee03b54"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock = boost::chrono::high_resolution_clock, AvgKind Avg = AvgMedian&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vex::profiler::profiler </td>
+          <td class="memname"><a class="el" href="classvex_1_1profiler.html">vex::profiler</a>&lt; Clock, Avg &gt;::<a class="el" href="classvex_1_1profiler.html">profiler</a> </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; cl::CommandQueue &gt; &amp;&#160;</td>
           <td class="paramname"><em>queue</em> = <code>std::vector&lt;cl::CommandQueue&gt;()</code>, </td>
@@ -126,15 +138,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a489e82323e1d9c0fe021e591b0a983b9"></a>
+<a class="anchor" id="a3dbd3d08cc68545839d3bd0b62220e91"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock = boost::chrono::high_resolution_clock, AvgKind Avg = AvgMedian&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void vex::profiler::tic_cl </td>
+          <td class="memname">void <a class="el" href="classvex_1_1profiler.html">vex::profiler</a>&lt; Clock, Avg &gt;::tic_cl </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -161,15 +175,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a class="anchor" id="a6b287d3d7d48cac0950418a33205255e"></a>
+<a class="anchor" id="a215aaf3b48a9f3966826cbf24d190562"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock = boost::chrono::high_resolution_clock, AvgKind Avg = AvgMedian&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void vex::profiler::tic_cpu </td>
+          <td class="memname">void <a class="el" href="classvex_1_1profiler.html">vex::profiler</a>&lt; Clock, Avg &gt;::tic_cpu </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -194,15 +210,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a class="anchor" id="a4f337c2afb72e3fb7a8f8dc6e13136a7"></a>
+<a class="anchor" id="a8b47419611203c95e296396865b18b87"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock = boost::chrono::high_resolution_clock, AvgKind Avg = AvgMedian&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double vex::profiler::toc </td>
+          <td class="memname">double <a class="el" href="classvex_1_1profiler.html">vex::profiler</a>&lt; Clock, Avg &gt;::toc </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>

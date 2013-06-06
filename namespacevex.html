@@ -46,6 +46,7 @@
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -84,6 +85,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1multivector.html">multivector</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for several vex::vectors.  <a href="classvex_1_1multivector.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1stopwatch.html">stopwatch</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A stopwatch that computes the median and mean of individual timings.  <a href="classvex_1_1stopwatch.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1profiler.html">profiler</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for gathering and printing OpenCL and Host profiling info.  <a href="classvex_1_1profiler.html#details">More...</a><br/></td></tr>
@@ -164,6 +168,13 @@ typedef vector_expression<br class="typebreak"/>
 boost::proto::terminal<br class="typebreak"/>
 &lt; vector_terminal &gt;::type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vector_terminal_expression</b></td></tr>
 <tr class="separator:a7364d5c4b6879ff4eb43fbe5f80d8b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a1e9da4dac55e7a3bd19fff2401898488"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>AvgKind</b> { <b>AvgMean</b>, 
+<b>AvgMedian</b>
+ }</td></tr>
+<tr class="separator:a1e9da4dac55e7a3bd19fff2401898488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -736,7 +747,7 @@ template&lt;class DevFilter  = Filter::AllFilter&gt; </div>
 <div class="fragment"><div class="line">y = A * x;</div>
 </div><!-- fragment --><p> where x and y are vectors, and A is matrix for 3D Poisson problem in square domain. Each device gets portion of the vector proportional to the performance of this operation. </p>
 
-<p>References <a class="el" href="classvex_1_1SpMat.html#aeb8051a2504a0c874f655f2aa55f90ac">vex::SpMat&lt; real, column_t, idx_t &gt;::mul()</a>, <a class="el" href="classvex_1_1profiler.html#a489e82323e1d9c0fe021e591b0a983b9">vex::profiler::tic_cl()</a>, and <a class="el" href="classvex_1_1profiler.html#a4f337c2afb72e3fb7a8f8dc6e13136a7">vex::profiler::toc()</a>.</p>
+<p>References <a class="el" href="classvex_1_1SpMat.html#aeb8051a2504a0c874f655f2aa55f90ac">vex::SpMat&lt; real, column_t, idx_t &gt;::mul()</a>, <a class="el" href="classvex_1_1profiler.html#a3dbd3d08cc68545839d3bd0b62220e91">vex::profiler&lt; Clock, Avg &gt;::tic_cl()</a>, and <a class="el" href="classvex_1_1profiler.html#a8b47419611203c95e296396865b18b87">vex::profiler&lt; Clock, Avg &gt;::toc()</a>.</p>
 
 </div>
 </div>
@@ -768,7 +779,7 @@ template&lt;class DevFilter  = Filter::AllFilter&gt; </div>
 <div class="fragment"><div class="line">a = b + c;</div>
 </div><!-- fragment --><p> where a, b and c are device vectors. Each device gets portion of the vector proportional to the performance of this operation. </p>
 
-<p>References <a class="el" href="classvex_1_1profiler.html#a489e82323e1d9c0fe021e591b0a983b9">vex::profiler::tic_cl()</a>, and <a class="el" href="classvex_1_1profiler.html#a4f337c2afb72e3fb7a8f8dc6e13136a7">vex::profiler::toc()</a>.</p>
+<p>References <a class="el" href="classvex_1_1profiler.html#a3dbd3d08cc68545839d3bd0b62220e91">vex::profiler&lt; Clock, Avg &gt;::tic_cl()</a>, and <a class="el" href="classvex_1_1profiler.html#a8b47419611203c95e296396865b18b87">vex::profiler&lt; Clock, Avg &gt;::toc()</a>.</p>
 
 </div>
 </div>

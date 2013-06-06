@@ -50,6 +50,7 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">profiler.hpp File Reference</div>  </div>
@@ -94,7 +95,10 @@
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1profiler.html">vex::profiler</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1stopwatch.html">vex::stopwatch&lt; Clock, Avg &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A stopwatch that computes the median and mean of individual timings.  <a href="classvex_1_1stopwatch.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1profiler.html">vex::profiler&lt; Clock, Avg &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for gathering and printing OpenCL and Host profiling info.  <a href="classvex_1_1profiler.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -104,11 +108,19 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespacevex"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector expression template library for OpenCL. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a1e9da4dac55e7a3bd19fff2401898488"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>AvgKind</b> { <b>AvgMean</b>, 
+<b>AvgMedian</b>
+ }</td></tr>
+<tr class="separator:a1e9da4dac55e7a3bd19fff2401898488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a11504a087cbe0d72fcf6c2bff91b2391"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11504a087cbe0d72fcf6c2bff91b2391"></a>
-std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, <a class="el" href="classvex_1_1profiler.html">vex::profiler</a> &amp;prof)</td></tr>
-<tr class="separator:a11504a087cbe0d72fcf6c2bff91b2391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85993fdd36b1cffb1eec98cc82e609c8"><td class="memTemplParams" colspan="2"><a class="anchor" id="a85993fdd36b1cffb1eec98cc82e609c8"></a>
+template&lt;class Clock , vex::AvgKind Avg&gt; </td></tr>
+<tr class="memitem:a85993fdd36b1cffb1eec98cc82e609c8"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, <a class="el" href="classvex_1_1profiler.html">vex::profiler</a>&lt; Clock, Avg &gt; &amp;prof)</td></tr>
+<tr class="separator:a85993fdd36b1cffb1eec98cc82e609c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Simple OpenCL/Host profiler. </p>
