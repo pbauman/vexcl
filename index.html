@@ -205,7 +205,9 @@
 <div class="line"><a class="code" href="classvex_1_1slicer.html" title="Slicing operator.">vex::slicer&lt;2&gt;</a> slice({n, n});</div>
 <div class="line"></div>
 <div class="line">Y = slice[42](X);          <span class="comment">// Put 42-nd row of X into Y.</span></div>
-<div class="line">Y = slice[range()][42](X); <span class="comment">// Put 42-nd column of X into Y;</span></div>
+<div class="line">Y = slice[range()][42](X); <span class="comment">// Put 42-nd column of X into Y.</span></div>
+<div class="line"></div>
+<div class="line">slice[range()][10](X) = Y; <span class="comment">// Put Y into 10-th column of X.</span></div>
 <div class="line"></div>
 <div class="line"><span class="comment">// Assign sub-block [10,20)x[30,40) of X to Z:</span></div>
 <div class="line"><a class="code" href="classvex_1_1vector.html" title="Device vector.">vex::vector&lt;double&gt;</a> Z = slice[range(10, 20)][range(30, 40)](X);</div>

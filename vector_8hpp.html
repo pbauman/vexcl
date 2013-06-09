@@ -235,7 +235,7 @@ template&lt;class T &gt; </td></tr>
 <div class="line">            const vector&amp; \</div>
 <div class="line">        &gt;::type \</div>
 <div class="line">        operator cop(<span class="keyword">const</span> Expr &amp;expr) { \</div>
-<div class="line">            assign_expression&lt;op&gt;(expr); \</div>
+<div class="line">            assign_expression&lt;op&gt;(*<span class="keyword">this</span>, expr, queue, part); \</div>
 <div class="line">            return *<span class="keyword">this</span>; \</div>
 <div class="line">        }</div>
 </div><!-- fragment -->
