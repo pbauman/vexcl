@@ -238,6 +238,9 @@
 </div><!-- fragment --><p>The matrix-vector products may be used in vector expressions. The only restriction is that the expressions have to be additive. This is due to the fact that matrix representation may span several compute devices. Hence, a matrix-vector product operation may require several kernel launches and inter-device communication.</p>
 <div class="fragment"><div class="line"><span class="comment">// Compute residual value for a system of linear equations:</span></div>
 <div class="line">Z = Y - A * X;</div>
+</div><!-- fragment --><p>This restriction may be lifted for single-device contexts. In this case VexCL does not need to worry about inter-device communication. Hence, it is possible to inline matrix-vector product into normal vector expression with help of <code>vex::make_inline()</code> function:</p>
+<div class="fragment"><div class="line">residual = sum(Y - vex::make_inline(A * X));</div>
+<div class="line">Z = sin(vex::make_inline(A * X));</div>
 </div><!-- fragment --><h2><a class="anchor" id="stencil-convolutions"></a>Stencil convolutions</h2>
 <p>Stencil convolution is another common operation that may be used, for example, to represent a signal filter, or a (one-dimensional) differential operator. VexCL implements two stencil kinds. The first one is a simple linear stencil that holds linear combination coefficients. The example below computes moving average of a vector with a 5-point window: </p>
 <div class="fragment"><div class="line"><a class="code" href="classvex_1_1stencil.html" title="Stencil.">vex::stencil&lt;double&gt;</a> S(ctx, <span class="comment">/*coefficients:*/</span>{0.2, 0.2, 0.2, 0.2, 0.2}, <span class="comment">/*center:*/</span>2);</div>

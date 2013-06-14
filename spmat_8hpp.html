@@ -67,6 +67,10 @@
 <code>#include &lt;iostream&gt;</code><br/>
 <code>#include &lt;type_traits&gt;</code><br/>
 <code>#include &lt;<a class="el" href="vector_8hpp.html">vexcl/vector.hpp</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="hybrid__ell_8hpp.html">vexcl/spmat/hybrid_ell.hpp</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="csr_8hpp.html">vexcl/spmat/csr.hpp</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="ccsr_8hpp.html">vexcl/spmat/ccsr.hpp</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="inline__spmv_8hpp.html">vexcl/spmat/inline_spmv.hpp</a>&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for spmat.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -74,7 +78,7 @@
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="spmat_8hpp__incl.png" border="0" usemap="#vexcl_2spmat_8hpp" alt=""/></div>
 <map name="vexcl_2spmat_8hpp" id="vexcl_2spmat_8hpp">
-<area shape="rect" id="node21" href="vector_8hpp.html" title="OpenCL device vector." alt="" coords="965,80,1089,107"/><area shape="rect" id="node34" href="operations_8hpp.html" title="Set of operations to be used in vector expressions." alt="" coords="675,155,827,181"/><area shape="rect" id="node45" href="util_8hpp.html" title="OpenCL general utilities." alt="" coords="935,237,1039,264"/><area shape="rect" id="node69" href="profiler_8hpp.html" title="Simple OpenCL/Host profiler." alt="" coords="2147,237,2275,264"/><area shape="rect" id="node95" href="devlist_8hpp.html" title="OpenCL device enumeration." alt="" coords="1229,155,1355,181"/><area shape="rect" id="node67" href="types_8hpp.html" title="C++ sugar for OpenCL vector types, eg. cl_float4, operator+." alt="" coords="838,328,958,355"/></map>
+<area shape="rect" id="node21" href="vector_8hpp.html" title="OpenCL device vector." alt="" coords="993,171,1116,197"/><area shape="rect" id="node109" href="hybrid__ell_8hpp.html" title="OpenCL sparse matrix in Hybrid ELL&#45;CSR format." alt="" coords="2039,81,2179,122"/><area shape="rect" id="node111" href="csr_8hpp.html" title="OpenCL sparse matrix in Hybrid ELL&#45;CSR format." alt="" coords="2203,88,2351,115"/><area shape="rect" id="node113" href="ccsr_8hpp.html" title="Sparse matrix in CCSR format." alt="" coords="943,88,1099,115"/><area shape="rect" id="node116" href="inline__spmv_8hpp.html" title="Inline SpMV operation." alt="" coords="2427,81,2561,122"/><area shape="rect" id="node34" href="operations_8hpp.html" title="Set of operations to be used in vector expressions." alt="" coords="666,245,819,272"/><area shape="rect" id="node45" href="util_8hpp.html" title="OpenCL general utilities." alt="" coords="927,328,1031,355"/><area shape="rect" id="node69" href="profiler_8hpp.html" title="Simple OpenCL/Host profiler." alt="" coords="2139,328,2267,355"/><area shape="rect" id="node95" href="devlist_8hpp.html" title="OpenCL device enumeration." alt="" coords="1221,245,1347,272"/><area shape="rect" id="node67" href="types_8hpp.html" title="C++ sugar for OpenCL vector types, eg. cl_float4, operator+." alt="" coords="835,419,955,445"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -83,16 +87,13 @@
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="spmat_8hpp__dep__incl.png" border="0" usemap="#vexcl_2spmat_8hppdep" alt=""/></div>
 <map name="vexcl_2spmat_8hppdep" id="vexcl_2spmat_8hppdep">
-<area shape="rect" id="node3" href="mpi_2spmat_8hpp.html" title="MPI wrapper for vex::SpMat." alt="" coords="4,80,157,107"/><area shape="rect" id="node7" href="vexcl_8hpp.html" title="Vector expression template library for OpenCL." alt="" coords="183,80,299,107"/><area shape="rect" id="node5" href="mpi_8hpp.html" title="MPI wrappers for VexCL types." alt="" coords="27,155,136,181"/></map>
+<area shape="rect" id="node3" href="mpi_2spmat_8hpp.html" title="MPI wrapper for vex::SpMat." alt="" coords="4,88,157,115"/><area shape="rect" id="node7" href="inline__spmv_8hpp.html" title="Inline SpMV operation." alt="" coords="183,81,317,122"/><area shape="rect" id="node10" href="vexcl_8hpp.html" title="Vector expression template library for OpenCL." alt="" coords="343,88,459,115"/><area shape="rect" id="node5" href="mpi_8hpp.html" title="MPI wrappers for VexCL types." alt="" coords="27,171,136,197"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1SpMat.html">vex::SpMat&lt; real, column_t, idx_t &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1SpMat.html">vex::SpMat&lt; val_t, col_t, idx_t &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sparse matrix in hybrid ELL-CSR format.  <a href="classvex_1_1SpMat.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1SpMatCCSR.html">vex::SpMatCCSR&lt; real, column_t, idx_t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sparse matrix in CCSR format.  <a href="classvex_1_1SpMatCCSR.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -103,9 +104,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad35e5733c1fb53fbc1b8bf0eaf020219"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#ad35e5733c1fb53fbc1b8bf0eaf020219">vex::device_spmv_perf</a> (const cl::CommandQueue &amp;)</td></tr>
-<tr class="memdesc:ad35e5733c1fb53fbc1b8bf0eaf020219"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weights device wrt to spmv performance.  <a href="#ad35e5733c1fb53fbc1b8bf0eaf020219">More...</a><br/></td></tr>
-<tr class="separator:ad35e5733c1fb53fbc1b8bf0eaf020219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e8c4b4386379f9b8489e382909070e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#ae8e8c4b4386379f9b8489e382909070e">vex::device_spmv_perf</a> (const cl::CommandQueue &amp;q)</td></tr>
+<tr class="memdesc:ae8e8c4b4386379f9b8489e382909070e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weights device wrt to spmv performance.  <a href="#ae8e8c4b4386379f9b8489e382909070e">More...</a><br/></td></tr>
+<tr class="separator:ae8e8c4b4386379f9b8489e382909070e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>OpenCL sparse matrix. </p>

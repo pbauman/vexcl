@@ -110,11 +110,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1Reductor.html">Reductor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parallel reduction of arbitrary expression.  <a href="classvex_1_1Reductor.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvex_1_1SpMatCCSR.html">SpMatCCSR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sparse matrix in CCSR format.  <a href="structvex_1_1SpMatCCSR.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1SpMat.html">SpMat</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sparse matrix in hybrid ELL-CSR format.  <a href="classvex_1_1SpMat.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1SpMatCCSR.html">SpMatCCSR</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sparse matrix in CCSR format.  <a href="classvex_1_1SpMatCCSR.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1stencil.html">stencil</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stencil.  <a href="classvex_1_1stencil.html#details">More...</a><br/></td></tr>
@@ -223,9 +223,13 @@ sizeof...(Tail)+1, false &gt;<br class="typebreak"/>
  &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevex.html#a1f12df83605db6011463d6bca2b584ca">tie</a> (<a class="el" href="classvex_1_1vector.html">vex::vector</a>&lt; T &gt; &amp;head, <a class="el" href="classvex_1_1vector.html">vex::vector</a>&lt; Tail &gt; &amp;...tail)</td></tr>
 <tr class="memdesc:a1f12df83605db6011463d6bca2b584ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ties several vex::vectors into a multivector.  <a href="#a1f12df83605db6011463d6bca2b584ca">More...</a><br/></td></tr>
 <tr class="separator:a1f12df83605db6011463d6bca2b584ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad35e5733c1fb53fbc1b8bf0eaf020219"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#ad35e5733c1fb53fbc1b8bf0eaf020219">device_spmv_perf</a> (const cl::CommandQueue &amp;)</td></tr>
-<tr class="memdesc:ad35e5733c1fb53fbc1b8bf0eaf020219"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weights device wrt to spmv performance.  <a href="#ad35e5733c1fb53fbc1b8bf0eaf020219">More...</a><br/></td></tr>
-<tr class="separator:ad35e5733c1fb53fbc1b8bf0eaf020219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914fa20fcb010e5801815758dfdda73c"><td class="memTemplParams" colspan="2"><a class="anchor" id="a914fa20fcb010e5801815758dfdda73c"></a>
+template&lt;typename val_t , typename col_t , typename idx_t &gt; </td></tr>
+<tr class="memitem:a914fa20fcb010e5801815758dfdda73c"><td class="memTemplItemLeft" align="right" valign="top">inline_spmv&lt; val_t, col_t, idx_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_inline</b> (const spmv&lt; val_t, col_t, idx_t &gt; &amp;base)</td></tr>
+<tr class="separator:a914fa20fcb010e5801815758dfdda73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e8c4b4386379f9b8489e382909070e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#ae8e8c4b4386379f9b8489e382909070e">device_spmv_perf</a> (const cl::CommandQueue &amp;q)</td></tr>
+<tr class="memdesc:ae8e8c4b4386379f9b8489e382909070e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weights device wrt to spmv performance.  <a href="#ae8e8c4b4386379f9b8489e382909070e">More...</a><br/></td></tr>
+<tr class="separator:ae8e8c4b4386379f9b8489e382909070e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6ed30e74c6b0ab0685466979e869e47"><td class="memTemplParams" colspan="2"><a class="anchor" id="ac6ed30e74c6b0ab0685466979e869e47"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ac6ed30e74c6b0ab0685466979e869e47"><td class="memTemplItemLeft" align="right" valign="top">conv&lt; <a class="el" href="classvex_1_1stencil.html">stencil</a>&lt; T &gt;, <a class="el" href="classvex_1_1vector.html">vector</a>&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="classvex_1_1stencil.html">stencil</a>&lt; T &gt; &amp;s, const <a class="el" href="classvex_1_1vector.html">vector</a>&lt; T &gt; &amp;x)</td></tr>
@@ -251,6 +255,9 @@ template&lt;class To , class From &gt; </td></tr>
 <tr class="memitem:a498e9df37cf6d84b8c49822fcf42050e"><td class="memTemplItemLeft" align="right" valign="top">To&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevex.html#a498e9df37cf6d84b8c49822fcf42050e">cl_convert</a> (const From &amp;val)</td></tr>
 <tr class="memdesc:a498e9df37cf6d84b8c49822fcf42050e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert each element of the vector to another type. <br/></td></tr>
 <tr class="separator:a498e9df37cf6d84b8c49822fcf42050e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37bce794302decbd0c337aa3e9b56df1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#a37bce794302decbd0c337aa3e9b56df1">precondition</a> (bool condition, const std::string &amp;fail_message)</td></tr>
+<tr class="memdesc:a37bce794302decbd0c337aa3e9b56df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check run-time condition.  <a href="#a37bce794302decbd0c337aa3e9b56df1">More...</a><br/></td></tr>
+<tr class="separator:a37bce794302decbd0c337aa3e9b56df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56365bca0357a23c638d8d39a0224304"><td class="memTemplParams" colspan="2"><a class="anchor" id="a56365bca0357a23c638d8d39a0224304"></a>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:a56365bca0357a23c638d8d39a0224304"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevex.html#a56365bca0357a23c638d8d39a0224304">type_name</a> ()</td></tr>
@@ -468,6 +475,11 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="na
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#adde6e399118c4e9c8fdb111d23d65698">alignup</a> (size_t n, size_t m=16U)</td></tr>
 <tr class="memdesc:adde6e399118c4e9c8fdb111d23d65698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Align n to the next multiple of m. <br/></td></tr>
 <tr class="separator:adde6e399118c4e9c8fdb111d23d65698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea5e52c83aea2476f33019eb3961866"><td class="memTemplParams" colspan="2"><a class="anchor" id="aaea5e52c83aea2476f33019eb3961866"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aaea5e52c83aea2476f33019eb3961866"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevex.html#aaea5e52c83aea2476f33019eb3961866">bytes</a> (const std::vector&lt; T &gt; &amp;v)</td></tr>
+<tr class="memdesc:aaea5e52c83aea2476f33019eb3961866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return vector size in bytes. <br/></td></tr>
+<tr class="separator:aaea5e52c83aea2476f33019eb3961866"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9cb7c79ff9cc17386c525237ff1bd1a"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae9cb7c79ff9cc17386c525237ff1bd1a"></a>
 template&lt;size_t I, class Function , class Tuple &gt; </td></tr>
 <tr class="memitem:ae9cb7c79ff9cc17386c525237ff1bd1a"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;(I==std::tuple_size<br class="typebreak"/>
@@ -719,7 +731,7 @@ template&lt;class DevFilter  = Filter::AllFilter&gt; </div>
 </div><!-- fragment --> 
 </div>
 </div>
-<a class="anchor" id="ad35e5733c1fb53fbc1b8bf0eaf020219"></a>
+<a class="anchor" id="ae8e8c4b4386379f9b8489e382909070e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -742,12 +754,11 @@ template&lt;class DevFilter  = Filter::AllFilter&gt; </div>
 </div><div class="memdoc">
 
 <p>Weights device wrt to spmv performance. </p>
-<p>Returns device weight after spmv test.</p>
 <p>Launches the following kernel on each device: </p>
 <div class="fragment"><div class="line">y = A * x;</div>
 </div><!-- fragment --><p> where x and y are vectors, and A is matrix for 3D Poisson problem in square domain. Each device gets portion of the vector proportional to the performance of this operation. </p>
 
-<p>References <a class="el" href="classvex_1_1SpMat.html#aeb8051a2504a0c874f655f2aa55f90ac">vex::SpMat&lt; real, column_t, idx_t &gt;::mul()</a>, <a class="el" href="classvex_1_1profiler.html#a3dbd3d08cc68545839d3bd0b62220e91">vex::profiler&lt; Clock, Avg &gt;::tic_cl()</a>, and <a class="el" href="classvex_1_1profiler.html#a8b47419611203c95e296396865b18b87">vex::profiler&lt; Clock, Avg &gt;::toc()</a>.</p>
+<p>References <a class="el" href="classvex_1_1SpMat.html#a9fd3fb800a35159b6ab0a4570276e734">vex::SpMat&lt; val_t, col_t, idx_t &gt;::mul()</a>, <a class="el" href="classvex_1_1profiler.html#a3dbd3d08cc68545839d3bd0b62220e91">vex::profiler&lt; Clock, Avg &gt;::tic_cl()</a>, and <a class="el" href="classvex_1_1profiler.html#a8b47419611203c95e296396865b18b87">vex::profiler&lt; Clock, Avg &gt;::toc()</a>.</p>
 
 </div>
 </div>
@@ -836,6 +847,45 @@ template&lt;class DevFilter  = Filter::AllFilter&gt; </div>
 <p>This is a copy of cl::Local that is absent is some of cl.hpp versions. </p>
 
 <p>Referenced by <a class="el" href="classvex_1_1Reductor.html#a1c1c04deb599a40ad06ff1c93563463f">vex::Reductor&lt; real, RDC &gt;::operator()()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a37bce794302decbd0c337aa3e9b56df1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vex::precondition </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>condition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fail_message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check run-time condition. </p>
+<p>Throws std::runtime_error if condition is false </p>
+
+<p>Referenced by <a class="el" href="classvex_1_1Context.html#a5dbfaec8e340379f57cf589617a267b8">vex::Context::Context()</a>, and <a class="el" href="classvex_1_1vector.html#a9c2de310d894fca15385030ae906d545">vex::vector&lt; size_t &gt;::vector()</a>.</p>
 
 </div>
 </div>

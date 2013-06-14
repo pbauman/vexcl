@@ -1,5 +1,6 @@
 <map id="vexcl/spmat.hpp" name="vexcl/spmat.hpp">
-<area shape="rect" id="node3" href="$mpi_2spmat_8hpp.html" title="MPI wrapper for vex::SpMat." alt="" coords="4,80,157,107"/>
-<area shape="rect" id="node7" href="$vexcl_8hpp.html" title="Vector expression template library for OpenCL." alt="" coords="183,80,299,107"/>
-<area shape="rect" id="node5" href="$mpi_8hpp.html" title="MPI wrappers for VexCL types." alt="" coords="27,155,136,181"/>
+<area shape="rect" id="node3" href="$mpi_2spmat_8hpp.html" title="MPI wrapper for vex::SpMat." alt="" coords="4,88,157,115"/>
+<area shape="rect" id="node7" href="$inline__spmv_8hpp.html" title="Inline SpMV operation." alt="" coords="183,81,317,122"/>
+<area shape="rect" id="node10" href="$vexcl_8hpp.html" title="Vector expression template library for OpenCL." alt="" coords="343,88,459,115"/>
+<area shape="rect" id="node5" href="$mpi_8hpp.html" title="MPI wrappers for VexCL types." alt="" coords="27,171,136,197"/>
 </map>
