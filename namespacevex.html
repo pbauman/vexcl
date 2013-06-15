@@ -227,6 +227,11 @@ sizeof...(Tail)+1, false &gt;<br class="typebreak"/>
 template&lt;typename val_t , typename col_t , typename idx_t &gt; </td></tr>
 <tr class="memitem:a914fa20fcb010e5801815758dfdda73c"><td class="memTemplItemLeft" align="right" valign="top">inline_spmv&lt; val_t, col_t, idx_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_inline</b> (const spmv&lt; val_t, col_t, idx_t &gt; &amp;base)</td></tr>
 <tr class="separator:a914fa20fcb010e5801815758dfdda73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87fed397aa464e97c31197feb2a42a9"><td class="memTemplParams" colspan="2"><a class="anchor" id="af87fed397aa464e97c31197feb2a42a9"></a>
+template&lt;typename val_t , typename col_t , typename idx_t , class MV &gt; </td></tr>
+<tr class="memitem:af87fed397aa464e97c31197feb2a42a9"><td class="memTemplItemLeft" align="right" valign="top">mv_inline_spmv&lt; val_t, col_t, <br class="typebreak"/>
+idx_t, MV &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_inline</b> (const multispmv&lt; val_t, col_t, idx_t, MV &gt; &amp;base)</td></tr>
+<tr class="separator:af87fed397aa464e97c31197feb2a42a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8e8c4b4386379f9b8489e382909070e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#ae8e8c4b4386379f9b8489e382909070e">device_spmv_perf</a> (const cl::CommandQueue &amp;q)</td></tr>
 <tr class="memdesc:ae8e8c4b4386379f9b8489e382909070e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weights device wrt to spmv performance.  <a href="#ae8e8c4b4386379f9b8489e382909070e">More...</a><br/></td></tr>
 <tr class="separator:ae8e8c4b4386379f9b8489e382909070e"><td class="memSeparator" colspan="2">&#160;</td></tr>
