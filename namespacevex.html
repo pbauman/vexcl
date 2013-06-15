@@ -223,14 +223,14 @@ sizeof...(Tail)+1, false &gt;<br class="typebreak"/>
  &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevex.html#a1f12df83605db6011463d6bca2b584ca">tie</a> (<a class="el" href="classvex_1_1vector.html">vex::vector</a>&lt; T &gt; &amp;head, <a class="el" href="classvex_1_1vector.html">vex::vector</a>&lt; Tail &gt; &amp;...tail)</td></tr>
 <tr class="memdesc:a1f12df83605db6011463d6bca2b584ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ties several vex::vectors into a multivector.  <a href="#a1f12df83605db6011463d6bca2b584ca">More...</a><br/></td></tr>
 <tr class="separator:a1f12df83605db6011463d6bca2b584ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a914fa20fcb010e5801815758dfdda73c"><td class="memTemplParams" colspan="2"><a class="anchor" id="a914fa20fcb010e5801815758dfdda73c"></a>
-template&lt;typename val_t , typename col_t , typename idx_t &gt; </td></tr>
-<tr class="memitem:a914fa20fcb010e5801815758dfdda73c"><td class="memTemplItemLeft" align="right" valign="top">inline_spmv&lt; val_t, col_t, idx_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_inline</b> (const spmv&lt; val_t, col_t, idx_t &gt; &amp;base)</td></tr>
+<tr class="memitem:a914fa20fcb010e5801815758dfdda73c"><td class="memTemplParams" colspan="2">template&lt;typename val_t , typename col_t , typename idx_t &gt; </td></tr>
+<tr class="memitem:a914fa20fcb010e5801815758dfdda73c"><td class="memTemplItemLeft" align="right" valign="top">inline_spmv&lt; val_t, col_t, idx_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevex.html#a914fa20fcb010e5801815758dfdda73c">make_inline</a> (const spmv&lt; val_t, col_t, idx_t &gt; &amp;base)</td></tr>
+<tr class="memdesc:a914fa20fcb010e5801815758dfdda73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inlines a sparse matrix - vector product.  <a href="#a914fa20fcb010e5801815758dfdda73c">More...</a><br/></td></tr>
 <tr class="separator:a914fa20fcb010e5801815758dfdda73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af87fed397aa464e97c31197feb2a42a9"><td class="memTemplParams" colspan="2"><a class="anchor" id="af87fed397aa464e97c31197feb2a42a9"></a>
-template&lt;typename val_t , typename col_t , typename idx_t , class MV &gt; </td></tr>
+<tr class="memitem:af87fed397aa464e97c31197feb2a42a9"><td class="memTemplParams" colspan="2">template&lt;typename val_t , typename col_t , typename idx_t , class MV &gt; </td></tr>
 <tr class="memitem:af87fed397aa464e97c31197feb2a42a9"><td class="memTemplItemLeft" align="right" valign="top">mv_inline_spmv&lt; val_t, col_t, <br class="typebreak"/>
-idx_t, MV &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_inline</b> (const multispmv&lt; val_t, col_t, idx_t, MV &gt; &amp;base)</td></tr>
+idx_t, MV &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevex.html#af87fed397aa464e97c31197feb2a42a9">make_inline</a> (const multispmv&lt; val_t, col_t, idx_t, MV &gt; &amp;base)</td></tr>
+<tr class="memdesc:af87fed397aa464e97c31197feb2a42a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inlines a sparse matrix - multivector product.  <a href="#af87fed397aa464e97c31197feb2a42a9">More...</a><br/></td></tr>
 <tr class="separator:af87fed397aa464e97c31197feb2a42a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8e8c4b4386379f9b8489e382909070e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#ae8e8c4b4386379f9b8489e382909070e">device_spmv_perf</a> (const cl::CommandQueue &amp;q)</td></tr>
 <tr class="memdesc:ae8e8c4b4386379f9b8489e382909070e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weights device wrt to spmv performance.  <a href="#ae8e8c4b4386379f9b8489e382909070e">More...</a><br/></td></tr>
@@ -855,6 +855,58 @@ template&lt;class DevFilter  = Filter::AllFilter&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a914fa20fcb010e5801815758dfdda73c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename val_t , typename col_t , typename idx_t &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">inline_spmv&lt;val_t, col_t, idx_t&gt; vex::make_inline </td>
+          <td>(</td>
+          <td class="paramtype">const spmv&lt; val_t, col_t, idx_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>base</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inlines a sparse matrix - vector product. </p>
+<p>When applied to a matrix-vector product, the product becomes inlineable. That is, it may be used in any vector expression (not just additive expression). This is only possible in single-device contexts, so user has to guarantee that.</p>
+<p>Example: </p>
+<div class="fragment"><div class="line"><span class="comment">// Get maximum residual value:</span></div>
+<div class="line">eps = sum( fabs(f - <a class="code" href="namespacevex.html#a914fa20fcb010e5801815758dfdda73c" title="Inlines a sparse matrix - vector product.">vex::make_inline</a>(A * x)) );</div>
+</div><!-- fragment --> 
+<p>References <a class="el" href="namespacevex.html#a37bce794302decbd0c337aa3e9b56df1">precondition()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af87fed397aa464e97c31197feb2a42a9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename val_t , typename col_t , typename idx_t , class MV &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">mv_inline_spmv&lt;val_t, col_t, idx_t, MV&gt; vex::make_inline </td>
+          <td>(</td>
+          <td class="paramtype">const multispmv&lt; val_t, col_t, idx_t, MV &gt; &amp;&#160;</td>
+          <td class="paramname"><em>base</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inlines a sparse matrix - multivector product. </p>
+<p>When applied to a matrix-multivector product, the product becomes inlineable. That is, it may be used in any multivector expression (not just additive expression). This is only possible in single-device contexts, so user has to guarantee that.</p>
+<p>Example: </p>
+<div class="fragment"><div class="line"><span class="comment">// Get maximum residual value:</span></div>
+<div class="line">eps = sum( fabs(f - <a class="code" href="namespacevex.html#a914fa20fcb010e5801815758dfdda73c" title="Inlines a sparse matrix - vector product.">vex::make_inline</a>(A * x)) );</div>
+</div><!-- fragment --> 
+<p>References <a class="el" href="namespacevex.html#a37bce794302decbd0c337aa3e9b56df1">precondition()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a37bce794302decbd0c337aa3e9b56df1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -890,7 +942,7 @@ template&lt;class DevFilter  = Filter::AllFilter&gt; </div>
 <p>Check run-time condition. </p>
 <p>Throws std::runtime_error if condition is false </p>
 
-<p>Referenced by <a class="el" href="classvex_1_1Context.html#a5dbfaec8e340379f57cf589617a267b8">vex::Context::Context()</a>, and <a class="el" href="classvex_1_1vector.html#a9c2de310d894fca15385030ae906d545">vex::vector&lt; size_t &gt;::vector()</a>.</p>
+<p>Referenced by <a class="el" href="classvex_1_1Context.html#a5dbfaec8e340379f57cf589617a267b8">vex::Context::Context()</a>, <a class="el" href="namespacevex.html#a914fa20fcb010e5801815758dfdda73c">make_inline()</a>, and <a class="el" href="classvex_1_1vector.html#a9c2de310d894fca15385030ae906d545">vex::vector&lt; size_t &gt;::vector()</a>.</p>
 
 </div>
 </div>
