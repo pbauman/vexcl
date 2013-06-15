@@ -16,7 +16,7 @@
 <area shape="rect" id="node137" href="$spmat_8hpp.html" title="OpenCL sparse matrix." alt="" coords="2183,155,2309,181"/>
 <area shape="rect" id="node159" href="$gather_8hpp.html" title="Gather scattered points from OpenCL device vector." alt="" coords="27,395,153,421"/>
 <area shape="rect" id="node149" href="$hybrid__ell_8hpp.html" title="OpenCL sparse matrix in Hybrid ELL&#45;CSR format." alt="" coords="2309,230,2449,271"/>
-<area shape="rect" id="node151" href="$csr_8hpp.html" title="OpenCL sparse matrix in Hybrid ELL&#45;CSR format." alt="" coords="2473,237,2621,264"/>
+<area shape="rect" id="node151" href="$csr_8hpp.html" title="OpenCL sparse matrix in CSR format." alt="" coords="2473,237,2621,264"/>
 <area shape="rect" id="node153" href="$ccsr_8hpp.html" title="Sparse matrix in CCSR format." alt="" coords="1615,237,1770,264"/>
 <area shape="rect" id="node156" href="$inline__spmv_8hpp.html" title="Inline SpMV operation." alt="" coords="2645,230,2779,271"/>
 </map>

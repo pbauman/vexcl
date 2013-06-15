@@ -16,7 +16,7 @@
 <area shape="rect" id="node23" href="$util_8hpp.html" title="OpenCL general utilities." alt="" coords="1804,403,1908,429"/>
 <area shape="rect" id="node47" href="$operations_8hpp.html" title="Set of operations to be used in vector expressions." alt="" coords="562,320,715,347"/>
 <area shape="rect" id="node129" href="$hybrid__ell_8hpp.html" title="OpenCL sparse matrix in Hybrid ELL&#45;CSR format." alt="" coords="1647,155,1787,197"/>
-<area shape="rect" id="node131" href="$csr_8hpp.html" title="OpenCL sparse matrix in Hybrid ELL&#45;CSR format." alt="" coords="1811,163,1959,189"/>
+<area shape="rect" id="node131" href="$csr_8hpp.html" title="OpenCL sparse matrix in CSR format." alt="" coords="1811,163,1959,189"/>
 <area shape="rect" id="node133" href="$ccsr_8hpp.html" title="Sparse matrix in CCSR format." alt="" coords="2194,163,2349,189"/>
 <area shape="rect" id="node136" href="$inline__spmv_8hpp.html" title="Inline SpMV operation." alt="" coords="1983,155,2117,197"/>
 <area shape="rect" id="node151" href="$philox_8hpp.html" title="Philox random generator." alt="" coords="3881,163,4057,189"/>

@@ -1,7 +1,7 @@
 <map id="vexcl/spmat.hpp" name="vexcl/spmat.hpp">
 <area shape="rect" id="node21" href="$vector_8hpp.html" title="OpenCL device vector." alt="" coords="993,171,1116,197"/>
 <area shape="rect" id="node109" href="$hybrid__ell_8hpp.html" title="OpenCL sparse matrix in Hybrid ELL&#45;CSR format." alt="" coords="2039,81,2179,122"/>
-<area shape="rect" id="node111" href="$csr_8hpp.html" title="OpenCL sparse matrix in Hybrid ELL&#45;CSR format." alt="" coords="2203,88,2351,115"/>
+<area shape="rect" id="node111" href="$csr_8hpp.html" title="OpenCL sparse matrix in CSR format." alt="" coords="2203,88,2351,115"/>
 <area shape="rect" id="node113" href="$ccsr_8hpp.html" title="Sparse matrix in CCSR format." alt="" coords="943,88,1099,115"/>
 <area shape="rect" id="node116" href="$inline__spmv_8hpp.html" title="Inline SpMV operation." alt="" coords="2427,81,2561,122"/>
 <area shape="rect" id="node34" href="$operations_8hpp.html" title="Set of operations to be used in vector expressions." alt="" coords="666,245,819,272"/>
