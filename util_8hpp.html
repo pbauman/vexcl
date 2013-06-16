@@ -51,8 +51,8 @@
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">util.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -99,6 +99,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvex_1_1is__cl__native.html">vex::is_cl_native&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares a type as CL native, allows using it as a literal.  <a href="structvex_1_1is__cl__native.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvex_1_1device__options.html">vex::device_options&lt; kind &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global program options holder.  <a href="structvex_1_1device__options.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -132,6 +135,13 @@ typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>ucha
 typedef std::map&lt; cl_context, <br class="typebreak"/>
 kernel_cache_entry &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vex::kernel_cache</b></td></tr>
 <tr class="separator:abd63d6ce98cf9dd8bc735e784fc92224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aee23473e73f03425a96da4cbde34233e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>device_options_kind</b> { <b>compile_options</b>, 
+<b>program_header</b>
+ }</td></tr>
+<tr class="separator:aee23473e73f03425a96da4cbde34233e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -360,13 +370,65 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aaea5e52c83aea2476f33019eb3961866"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevex.html#aaea5e52c83aea2476f33019eb3961866">vex::bytes</a> (const std::vector&lt; T &gt; &amp;v)</td></tr>
 <tr class="memdesc:aaea5e52c83aea2476f33019eb3961866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return vector size in bytes. <br/></td></tr>
 <tr class="separator:aaea5e52c83aea2476f33019eb3961866"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9cb7c79ff9cc17386c525237ff1bd1a"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae9cb7c79ff9cc17386c525237ff1bd1a"></a>
-template&lt;size_t I, class Function , class Tuple &gt; </td></tr>
-<tr class="memitem:ae9cb7c79ff9cc17386c525237ff1bd1a"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;(I==std::tuple_size<br class="typebreak"/>
-&lt; Tuple &gt;::value), void &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevex.html#ae9cb7c79ff9cc17386c525237ff1bd1a">vex::for_each</a> (const Tuple &amp;, Function &amp;)</td></tr>
-<tr class="memdesc:ae9cb7c79ff9cc17386c525237ff1bd1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over tuple elements. <br/></td></tr>
-<tr class="separator:ae9cb7c79ff9cc17386c525237ff1bd1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3fe52e80bf245c052cedbf50a3d388"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d3fe52e80bf245c052cedbf50a3d388"></a>
+cl::Context&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#a4d3fe52e80bf245c052cedbf50a3d388">vex::qctx</a> (const cl::CommandQueue &amp;q)</td></tr>
+<tr class="memdesc:a4d3fe52e80bf245c052cedbf50a3d388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for q.getInfo&lt;CL_QUEUE_CONTEXT&gt;() <br/></td></tr>
+<tr class="separator:a4d3fe52e80bf245c052cedbf50a3d388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae299eb0d6e1f28d13e73820ac0c56a52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae299eb0d6e1f28d13e73820ac0c56a52"></a>
+cl::Device&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#ae299eb0d6e1f28d13e73820ac0c56a52">vex::qdev</a> (const cl::CommandQueue &amp;q)</td></tr>
+<tr class="memdesc:ae299eb0d6e1f28d13e73820ac0c56a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for q.getInfo&lt;CL_QUEUE_DEVICE&gt;() <br/></td></tr>
+<tr class="separator:ae299eb0d6e1f28d13e73820ac0c56a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdde8bea01bff2ffb88771e32cae12a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdde8bea01bff2ffb88771e32cae12a4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#acdde8bea01bff2ffb88771e32cae12a4">vex::is_cpu</a> (const cl::Device &amp;d)</td></tr>
+<tr class="memdesc:acdde8bea01bff2ffb88771e32cae12a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the compute device is CPU. <br/></td></tr>
+<tr class="separator:acdde8bea01bff2ffb88771e32cae12a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a670468418fbb24fb1ca41adbaca5cdfc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a670468418fbb24fb1ca41adbaca5cdfc"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>vex::get_compile_options</b> (const cl::Device &amp;dev)</td></tr>
+<tr class="separator:a670468418fbb24fb1ca41adbaca5cdfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9756604e695ee64208b167160d7ca4ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9756604e695ee64208b167160d7ca4ea"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>vex::get_program_header</b> (const cl::Device &amp;dev)</td></tr>
+<tr class="separator:a9756604e695ee64208b167160d7ca4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52da74e6e1a5a01418ae9b9cefadb66d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#a52da74e6e1a5a01418ae9b9cefadb66d">vex::push_compile_options</a> (const cl::Device &amp;dev, const std::string &amp;str)</td></tr>
+<tr class="memdesc:a52da74e6e1a5a01418ae9b9cefadb66d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set global OpenCL compilation options for a given device.  <a href="#a52da74e6e1a5a01418ae9b9cefadb66d">More...</a><br/></td></tr>
+<tr class="separator:a52da74e6e1a5a01418ae9b9cefadb66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3405cf82dc68727a0dc4fe81677881a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3405cf82dc68727a0dc4fe81677881a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#ac3405cf82dc68727a0dc4fe81677881a">vex::pop_compile_options</a> (const cl::Device &amp;dev)</td></tr>
+<tr class="memdesc:ac3405cf82dc68727a0dc4fe81677881a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rolls back changes to compile options. <br/></td></tr>
+<tr class="separator:ac3405cf82dc68727a0dc4fe81677881a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473a9fd8eb022d0c5d6f3b3c8f3ae33e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#a473a9fd8eb022d0c5d6f3b3c8f3ae33e">vex::push_program_header</a> (const cl::Device &amp;dev, const std::string &amp;str)</td></tr>
+<tr class="memdesc:a473a9fd8eb022d0c5d6f3b3c8f3ae33e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set global OpenCL program header for a given device.  <a href="#a473a9fd8eb022d0c5d6f3b3c8f3ae33e">More...</a><br/></td></tr>
+<tr class="separator:a473a9fd8eb022d0c5d6f3b3c8f3ae33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4e95599d2b78b67f44130ca2deafef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a4e95599d2b78b67f44130ca2deafef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#a6a4e95599d2b78b67f44130ca2deafef">vex::pop_program_header</a> (const cl::Device &amp;dev)</td></tr>
+<tr class="memdesc:a6a4e95599d2b78b67f44130ca2deafef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rolls back changes to compile options. <br/></td></tr>
+<tr class="separator:a6a4e95599d2b78b67f44130ca2deafef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc8bddc0a9b65cd4aae3d510b036a2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5dc8bddc0a9b65cd4aae3d510b036a2a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#a5dc8bddc0a9b65cd4aae3d510b036a2a">vex::push_compile_options</a> (const std::vector&lt; cl::CommandQueue &gt; &amp;queue, const std::string &amp;str)</td></tr>
+<tr class="memdesc:a5dc8bddc0a9b65cd4aae3d510b036a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set global OpenCL compilation options for each device in queue list. <br/></td></tr>
+<tr class="separator:a5dc8bddc0a9b65cd4aae3d510b036a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0bbeb74ee1d2069b386bc2da6ab4644"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0bbeb74ee1d2069b386bc2da6ab4644"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#af0bbeb74ee1d2069b386bc2da6ab4644">vex::pop_compile_options</a> (const std::vector&lt; cl::CommandQueue &gt; &amp;queue)</td></tr>
+<tr class="memdesc:af0bbeb74ee1d2069b386bc2da6ab4644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rolls back changes to compile options for each device in queue list. <br/></td></tr>
+<tr class="separator:af0bbeb74ee1d2069b386bc2da6ab4644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e5ba7a6559c80e33282b83ce217175e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e5ba7a6559c80e33282b83ce217175e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#a5e5ba7a6559c80e33282b83ce217175e">vex::push_program_header</a> (const std::vector&lt; cl::CommandQueue &gt; &amp;queue, const std::string &amp;str)</td></tr>
+<tr class="memdesc:a5e5ba7a6559c80e33282b83ce217175e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set global OpenCL program header for each device in queue list. <br/></td></tr>
+<tr class="separator:a5e5ba7a6559c80e33282b83ce217175e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5989c3bd66757af483a79d8f7aa1bc07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5989c3bd66757af483a79d8f7aa1bc07"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#a5989c3bd66757af483a79d8f7aa1bc07">vex::pop_program_header</a> (const std::vector&lt; cl::CommandQueue &gt; &amp;queue)</td></tr>
+<tr class="memdesc:a5989c3bd66757af483a79d8f7aa1bc07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rolls back changes to compile options for each device in queue list. <br/></td></tr>
+<tr class="separator:a5989c3bd66757af483a79d8f7aa1bc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8dd773dd40e5fa7cf9bb68f425cc20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae8dd773dd40e5fa7cf9bb68f425cc20"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>vex::standard_kernel_header</b> (const cl::Device &amp;dev)</td></tr>
+<tr class="separator:aae8dd773dd40e5fa7cf9bb68f425cc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7763bd1334147c58efee32b08012d0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7763bd1334147c58efee32b08012d0c"></a>
+cl::Program&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#ab7763bd1334147c58efee32b08012d0c">vex::build_sources</a> (const cl::Context &amp;context, const std::string &amp;source, const std::string &amp;options=&quot;&quot;)</td></tr>
+<tr class="memdesc:ab7763bd1334147c58efee32b08012d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and build a program from source string. <br/></td></tr>
+<tr class="separator:ab7763bd1334147c58efee32b08012d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a8336dca27e8e2c3e31bb8a2b70e91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90a8336dca27e8e2c3e31bb8a2b70e91"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#a90a8336dca27e8e2c3e31bb8a2b70e91">vex::kernel_workgroup_size</a> (const cl::Kernel &amp;kernel, const cl::Device &amp;device)</td></tr>
+<tr class="memdesc:a90a8336dca27e8e2c3e31bb8a2b70e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum possible workgroup size for given kernel. <br/></td></tr>
+<tr class="separator:a90a8336dca27e8e2c3e31bb8a2b70e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28774c57b6a78f9e774468ca3fbf9981"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28774c57b6a78f9e774468ca3fbf9981"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevex.html#a28774c57b6a78f9e774468ca3fbf9981">vex::num_workgroups</a> (const cl::Device &amp;device)</td></tr>
 <tr class="memdesc:a28774c57b6a78f9e774468ca3fbf9981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard number of workgroups to launch on a device. <br/></td></tr>
@@ -378,136 +440,6 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="na
 std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8hpp.html#a820f9bfc5d19b05ae97d079a51f1cfa3">operator&lt;&lt;</a> (std::ostream &amp;os, const cl::Error &amp;e)</td></tr>
 <tr class="memdesc:a820f9bfc5d19b05ae97d079a51f1cfa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output description of an OpenCL error to a stream. <br/></td></tr>
 <tr class="separator:a820f9bfc5d19b05ae97d079a51f1cfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:acd2e037ede04b8ed7b76ae7047f3d111"><td class="memTemplParams" colspan="2"><a class="anchor" id="acd2e037ede04b8ed7b76ae7047f3d111"></a>
-template&lt;size_t I, class Function , class Tuple &gt; </td></tr>
-<tr class="memitem:acd2e037ede04b8ed7b76ae7047f3d111"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;(I<br class="typebreak"/>
-&lt; std::tuple_size&lt; Tuple &gt;<br class="typebreak"/>
-::value), void &gt;::typefor_each(const <br class="typebreak"/>
-Tuple &amp;v, Function &amp;f){f(std::get<br class="typebreak"/>
-&lt; I &gt;v));for_each&lt; I+1 &gt;v, f);}template<br class="typebreak"/>
-&lt; long Begin, long End &gt;class <br class="typebreak"/>
-static_for{public:template<br class="typebreak"/>
-&lt; class Func &gt; static void <br class="typebreak"/>
-loop(Func &amp;&amp;f){iterate&lt; Begin &gt;<br class="typebreak"/>
-f);}private:template&lt; long I, <br class="typebreak"/>
-class Func &gt; static typename <br class="typebreak"/>
-std::enable_if&lt;(I&lt; End)&gt;::type <br class="typebreak"/>
-iterate(Func &amp;&amp;f){f.template <br class="typebreak"/>
-apply&lt; I &gt;);iterate&lt; I+1 &gt;f);}template<br class="typebreak"/>
-&lt; long I, class Func &gt; static <br class="typebreak"/>
-typename std::enable_if&lt;(I &gt;<br class="typebreak"/>
-=End)&gt;::type iterate(Func <br class="typebreak"/>
-&amp;&amp;){}};inline cl::Context qctx(const <br class="typebreak"/>
-cl::CommandQueue &amp;q){cl::Context <br class="typebreak"/>
-ctx;q.getInfo(CL_QUEUE_CONTEXT,&amp;ctx);return <br class="typebreak"/>
-ctx;}inline cl::Device qdev(const <br class="typebreak"/>
-cl::CommandQueue &amp;q){cl::Device <br class="typebreak"/>
-dev;q.getInfo(CL_QUEUE_DEVICE,&amp;dev);return <br class="typebreak"/>
-dev;}inline bool is_cpu(const <br class="typebreak"/>
-cl::Device &amp;d){return <br class="typebreak"/>
-d.getInfo&lt; CL_DEVICE_TYPE &gt;<br class="typebreak"/>
-)&amp;CL_DEVICE_TYPE_CPU;}enum <br class="typebreak"/>
-device_options_kind{compile_options, <br class="typebreak"/>
-program_header};template<br class="typebreak"/>
-&lt; device_options_kind kind &gt;<br class="typebreak"/>
-struct device_options{static <br class="typebreak"/>
-const std::string &amp;get(const <br class="typebreak"/>
-cl::Device &amp;dev){if(options[dev()].empty()) <br class="typebreak"/>
-options[dev()].push_back(&quot;&quot;);return <br class="typebreak"/>
-options[dev()].back();}static <br class="typebreak"/>
-void push(const cl::Device <br class="typebreak"/>
-&amp;dev, const std::string &amp;str){options[dev()].push_back(str);}static <br class="typebreak"/>
-void pop(const cl::Device &amp;dev){if(!options[dev()].empty()) <br class="typebreak"/>
-options[dev()].pop_back();}private:static <br class="typebreak"/>
-std::map&lt; cl_device_id, <br class="typebreak"/>
-std::vector&lt; std::string &gt;<br class="typebreak"/>
- &gt; options;};template<br class="typebreak"/>
-&lt; device_options_kind kind &gt;<br class="typebreak"/>
-std::map&lt; cl_device_id, <br class="typebreak"/>
-std::vector&lt; std::string &gt;<br class="typebreak"/>
- &gt; device_options&lt; kind &gt;<br class="typebreak"/>
-::options;inline std::string <br class="typebreak"/>
-get_compile_options(const <br class="typebreak"/>
-cl::Device &amp;dev){return <br class="typebreak"/>
-device_options<br class="typebreak"/>
-&lt; compile_options &gt;::get(dev);}inline <br class="typebreak"/>
-std::string get_program_header(const <br class="typebreak"/>
-cl::Device &amp;dev){return <br class="typebreak"/>
-device_options&lt; program_header &gt;<br class="typebreak"/>
-::get(dev);}inline void <br class="typebreak"/>
-push_compile_options(const <br class="typebreak"/>
-cl::Device &amp;dev, const <br class="typebreak"/>
-std::string &amp;str){device_options<br class="typebreak"/>
-&lt; compile_options &gt;::push(dev, <br class="typebreak"/>
-str);}inline void <br class="typebreak"/>
-pop_compile_options(const <br class="typebreak"/>
-cl::Device &amp;dev){device_options<br class="typebreak"/>
-&lt; compile_options &gt;::pop(dev);}inline <br class="typebreak"/>
-void push_program_header(const <br class="typebreak"/>
-cl::Device &amp;dev, const <br class="typebreak"/>
-std::string &amp;str){device_options<br class="typebreak"/>
-&lt; program_header &gt;::push(dev, <br class="typebreak"/>
-str);}inline void <br class="typebreak"/>
-pop_program_header(const <br class="typebreak"/>
-cl::Device &amp;dev){device_options<br class="typebreak"/>
-&lt; program_header &gt;::pop(dev);}inline <br class="typebreak"/>
-void push_compile_options(const <br class="typebreak"/>
-std::vector&lt; cl::CommandQueue &gt;<br class="typebreak"/>
- &amp;queue, const std::string <br class="typebreak"/>
-&amp;str){for(auto q=queue.begin();q!=queue.end();++q) <br class="typebreak"/>
-device_options<br class="typebreak"/>
-&lt; compile_options &gt;::push(qdev(*q), <br class="typebreak"/>
-str);}inline void <br class="typebreak"/>
-pop_compile_options(const <br class="typebreak"/>
-std::vector&lt; cl::CommandQueue &gt;<br class="typebreak"/>
- &amp;queue){for(auto q=queue.begin();q!=queue.end();++q) <br class="typebreak"/>
-device_options<br class="typebreak"/>
-&lt; compile_options &gt;::pop(qdev(*q));}inline <br class="typebreak"/>
-void push_program_header(const <br class="typebreak"/>
-std::vector&lt; cl::CommandQueue &gt;<br class="typebreak"/>
- &amp;queue, const std::string <br class="typebreak"/>
-&amp;str){for(auto q=queue.begin();q!=queue.end();++q) <br class="typebreak"/>
-device_options&lt; program_header &gt;<br class="typebreak"/>
-::push(qdev(*q), str);}inline <br class="typebreak"/>
-void pop_program_header(const <br class="typebreak"/>
-std::vector&lt; cl::CommandQueue &gt;<br class="typebreak"/>
- &amp;queue){for(auto q=queue.begin();q!=queue.end();++q) <br class="typebreak"/>
-device_options&lt; program_header &gt;<br class="typebreak"/>
-::pop(qdev(*q));}inline <br class="typebreak"/>
-std::string <br class="typebreak"/>
-standard_kernel_header(const <br class="typebreak"/>
-cl::Device &amp;dev){return <br class="typebreak"/>
-std::string(&quot;#if defined(cl_khr_fp64)\n&quot;&quot;# <br class="typebreak"/>
-pragma OPENCL EXTENSION <br class="typebreak"/>
-cl_khr_fp64: enable\n&quot;&quot;#elif <br class="typebreak"/>
-defined(cl_amd_fp64)\n&quot;&quot;# <br class="typebreak"/>
-pragma OPENCL EXTENSION <br class="typebreak"/>
-cl_amd_fp64: enable\n&quot;&quot;#endif\n&quot;)+get_program_header(dev);}inline <br class="typebreak"/>
-cl::Program build_sources(const <br class="typebreak"/>
-cl::Context &amp;context, const <br class="typebreak"/>
-std::string &amp;source, const <br class="typebreak"/>
-std::string &amp;options=&quot;&quot;){cl::Program <br class="typebreak"/>
-program(context, <br class="typebreak"/>
-cl::Program::Sources(1, <br class="typebreak"/>
-std::make_pair(source.c_str(), <br class="typebreak"/>
-source.size())));auto device=context.getInfo<br class="typebreak"/>
-&lt; CL_CONTEXT_DEVICES &gt;);try{program.build(device,(options+&quot; <br class="typebreak"/>
-&quot;+get_compile_options(device[0])).c_str());}catch(const <br class="typebreak"/>
-cl::Error &amp;){std::cerr<br class="typebreak"/>
-&lt;&lt; source&lt;&lt; std::endl<br class="typebreak"/>
-&lt;&lt; program.getBuildInfo<br class="typebreak"/>
-&lt; CL_PROGRAM_BUILD_LOG &gt;device[0])<br class="typebreak"/>
-&lt;&lt; std::endl;throw;}return <br class="typebreak"/>
-program;}inline uint <br class="typebreak"/>
-kernel_workgroup_size(const <br class="typebreak"/>
-cl::Kernel &amp;kernel, const <br class="typebreak"/>
-cl::Device &amp;device){size_t <br class="typebreak"/>
-wgsz=1024U;uint dev_wgsz=kernel.getWorkGroupInfo&lt; CL_KERNEL_WORK_GROUP_SIZE &gt;device);while(wgsz &gt; dev_wgsz&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevex.html#acd2e037ede04b8ed7b76ae7047f3d111">vex::wgsz</a> = 2</td></tr>
-<tr class="memdesc:acd2e037ede04b8ed7b76ae7047f3d111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over tuple elements. <br/></td></tr>
-<tr class="separator:acd2e037ede04b8ed7b76ae7047f3d111"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>OpenCL general utilities. </p>
