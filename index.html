@@ -302,8 +302,8 @@
 <div class="line">              X(0) * sin(alpha) + X(1) * cos(alpha) );</div>
 </div><!-- fragment --><h2><a class="anchor" id="converting-generic-c-algorithms-to-opencl"></a>Converting generic C++ algorithms to OpenCL</h2>
 <p>CUDA and OpenCL differ in their handling of compute kernels compilation. In NVIDIA's framework the compute kernels are compiled to PTX code together with the host program. In OpenCL the compute kernels are compiled at runtime from high-level C-like sources, adding an overhead which is particularly noticeable for smaller sized problems. This distinction leads to higher initialization cost of OpenCL programs, but at the same time it allows to generate better optimized kernels for the problem at hand. VexCL allows to exploit the possibility with help of its kernel generator mechanism.</p>
-<p>An instance of <code>vex::generator::symbolic&lt;T&gt;</code> dumps to output stream any arithmetic operations it is being subjected to. For example, this code snippet: </p>
-<div class="fragment"><div class="line">vex::generator::symbolic&lt;double&gt; x = 6, y = 7;</div>
+<p>An instance of <code>vex::symbolic&lt;T&gt;</code> dumps to output stream any arithmetic operations it is being subjected to. For example, this code snippet: </p>
+<div class="fragment"><div class="line">vex::symbolic&lt;double&gt; x = 6, y = 7;</div>
 <div class="line">x = sin(x * y);</div>
 </div><!-- fragment --><p> results in the following output: </p>
 <div class="fragment"><div class="line"><span class="keywordtype">double</span> var1 = 6;</div>
@@ -336,7 +336,7 @@
 <div class="line">vex::generator::set_recorder(body);</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// Create symbolic variable.</span></div>
-<div class="line"><span class="keyword">typedef</span> vex::generator::symbolic&lt;double&gt; sym_state;</div>
+<div class="line"><span class="keyword">typedef</span> vex::symbolic&lt;double&gt; sym_state;</div>
 <div class="line">sym_state sym_x(sym_state::VectorParameter);</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// Record expression sequience for a single RK4 step.</span></div>
@@ -383,7 +383,14 @@
 <div class="line"><span class="comment">// Use the function to advance initial state:</span></div>
 <div class="line"><span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 100; i++) x = rk4(x);</div>
 </div><!-- fragment --><p>Note that both <code>runge_kutta_4()</code> function and <code>rk4_stepper</code> function object may be reused for host-side computations.</p>
-<h2><a class="anchor" id="custom-kernels"></a>Custom kernels</h2>
+<p>It is very easy to generate an OpenCL function from a Boost.Phoenix lambda expression (since Boost.Phoenix lambdas are themselves generic functors):</p>
+<div class="fragment"><div class="line"><span class="keyword">using namespace </span>boost::phoenix::arg_names;</div>
+<div class="line"><span class="keyword">using</span> <a class="code" href="namespacevex_1_1generator.html#af0263b233e113206855f28eb745b7ec8" title="Builds function body from recorded expression and symbolic return value and parameters.">vex::generator::make_function</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keyword">auto</span> squared_radius = make_function&lt;double(double, double)&gt;(arg1 * arg1 + arg2 * arg2);</div>
+<div class="line"></div>
+<div class="line">Z = squared_radius(X, Y);</div>
+</div><!-- fragment --><h2><a class="anchor" id="custom-kernels"></a>Custom kernels</h2>
 <p>As <a href="http://en.wikipedia.org/wiki/Kozma_Prutkov">Kozma Prutkov</a> repeatedly said, "One cannot embrace the unembraceable". So in order to be usable, VexCL has to support custom kernels. <code>vex::vector::operator()(uint k)</code> returns <code>cl::Buffer</code> that holds vector data on k-th compute device. If the result depends on the neighbor points, one has to keep in mind that these points are possibly located on a different compute device. In this case the exchange of these halo points has to be arranged manually.</p>
 <p>The following example builds and launches a custom kernel for each device in the context: </p>
 <div class="fragment"><div class="line">std::vector&lt;cl::Kernel&gt; kernel(ctx.size());</div>
