@@ -182,18 +182,10 @@ sizeof...(Tail)+1, false &gt;<br class="typebreak"/>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span> Expr&gt; \</div>
-<div class="line">        typename std::enable_if&lt; \</div>
-<div class="line">            boost::proto::matches&lt; \</div>
-<div class="line">                typename boost::proto::result_of::as_expr&lt;Expr&gt;::type, \</div>
-<div class="line">                multivector_expr_grammar \</div>
-<div class="line">            &gt;::value || is_tuple&lt;Expr&gt;::value, \</div>
+<b>Value:</b><div class="fragment"><div class="line"> \</div>
+<div class="line">        template &lt;class Expr&gt; \</div>
 <div class="line">            const multivector&amp; \</div>
-<div class="line">        &gt;::type \</div>
-<div class="line">        operator cop(<span class="keyword">const</span> Expr &amp;expr) { \</div>
-<div class="line">            assign_expression&lt;op&gt;(expr); \</div>
-<div class="line">            return *<span class="keyword">this</span>; \</div>
-<div class="line">        }</div>
+<div class="line">        operator cop(<span class="keyword">const</span> Expr &amp;expr);</div>
 </div><!-- fragment -->
 </div>
 </div>

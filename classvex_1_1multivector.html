@@ -169,243 +169,55 @@ const std::vector<br class="typebreak"/>
 const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvex_1_1multivector.html#a3169c36e5e1a28aeee81f786c19d00eb">operator=</a> (const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp;mv)</td></tr>
 <tr class="memdesc:a3169c36e5e1a28aeee81f786c19d00eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment to a multivector. <br/></td></tr>
 <tr class="separator:a3169c36e5e1a28aeee81f786c19d00eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Expression assignments.</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>All operations are delegated to components of the multivector. </p>
-</div></td></tr>
-<tr class="memitem:a4ba62a0b92da0a0ac9c1a5c47a6e1862"><td class="memTemplParams" colspan="2"><a class="anchor" id="a4ba62a0b92da0a0ac9c1a5c47a6e1862"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:a4ba62a0b92da0a0ac9c1a5c47a6e1862"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_expr_grammar &gt;<br class="typebreak"/>
-::value||is_tuple&lt; Expr &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:a4ba62a0b92da0a0ac9c1a5c47a6e1862"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b6cdce1b745d92d5b5bec443483b8e2"><td class="memTemplParams" colspan="2"><a class="anchor" id="a8b6cdce1b745d92d5b5bec443483b8e2"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:a8b6cdce1b745d92d5b5bec443483b8e2"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_expr_grammar &gt;<br class="typebreak"/>
-::value||is_tuple&lt; Expr &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator+=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:a8b6cdce1b745d92d5b5bec443483b8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acab34059f920e22992e690107bd58a02"><td class="memTemplParams" colspan="2"><a class="anchor" id="acab34059f920e22992e690107bd58a02"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:acab34059f920e22992e690107bd58a02"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_expr_grammar &gt;<br class="typebreak"/>
-::value||is_tuple&lt; Expr &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator-=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:acab34059f920e22992e690107bd58a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa27c78f3ba204d8d3c5c4b7f89dfc313"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa27c78f3ba204d8d3c5c4b7f89dfc313"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:aa27c78f3ba204d8d3c5c4b7f89dfc313"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_expr_grammar &gt;<br class="typebreak"/>
-::value||is_tuple&lt; Expr &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator*=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:aa27c78f3ba204d8d3c5c4b7f89dfc313"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18bf3f6ca2d17ff3634322947d9544a9"><td class="memTemplParams" colspan="2"><a class="anchor" id="a18bf3f6ca2d17ff3634322947d9544a9"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:a18bf3f6ca2d17ff3634322947d9544a9"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_expr_grammar &gt;<br class="typebreak"/>
-::value||is_tuple&lt; Expr &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator/=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:a18bf3f6ca2d17ff3634322947d9544a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53f1dfec04618dd856e2dab2a6430777"><td class="memTemplParams" colspan="2"><a class="anchor" id="a53f1dfec04618dd856e2dab2a6430777"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:a53f1dfec04618dd856e2dab2a6430777"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_expr_grammar &gt;<br class="typebreak"/>
-::value||is_tuple&lt; Expr &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator%=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:a53f1dfec04618dd856e2dab2a6430777"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07eed665cc2947ee6d622dd7424b9842"><td class="memTemplParams" colspan="2"><a class="anchor" id="a07eed665cc2947ee6d622dd7424b9842"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:a07eed665cc2947ee6d622dd7424b9842"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_expr_grammar &gt;<br class="typebreak"/>
-::value||is_tuple&lt; Expr &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&amp;=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:a07eed665cc2947ee6d622dd7424b9842"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac750be70bb845f7fc6910714c5e3d159"><td class="memTemplParams" colspan="2"><a class="anchor" id="ac750be70bb845f7fc6910714c5e3d159"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:ac750be70bb845f7fc6910714c5e3d159"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_expr_grammar &gt;<br class="typebreak"/>
-::value||is_tuple&lt; Expr &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator|=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:ac750be70bb845f7fc6910714c5e3d159"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15a2405aa852ef8eb5951bfa44ee1532"><td class="memTemplParams" colspan="2"><a class="anchor" id="a15a2405aa852ef8eb5951bfa44ee1532"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:a15a2405aa852ef8eb5951bfa44ee1532"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_expr_grammar &gt;<br class="typebreak"/>
-::value||is_tuple&lt; Expr &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator^=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:a15a2405aa852ef8eb5951bfa44ee1532"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa82bbdcc21a6da77deac182b43f87a9b"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa82bbdcc21a6da77deac182b43f87a9b"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:aa82bbdcc21a6da77deac182b43f87a9b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_expr_grammar &gt;<br class="typebreak"/>
-::value||is_tuple&lt; Expr &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&lt;&lt;=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:aa82bbdcc21a6da77deac182b43f87a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a6caf223422bd566382e585fcf842ad"><td class="memTemplParams" colspan="2"><a class="anchor" id="a9a6caf223422bd566382e585fcf842ad"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:a9a6caf223422bd566382e585fcf842ad"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_expr_grammar &gt;<br class="typebreak"/>
-::value||is_tuple&lt; Expr &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&gt;&gt;=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:a9a6caf223422bd566382e585fcf842ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ba1432cee77e6dd8dfb486b9b8bba0b"><td class="memTemplParams" colspan="2"><a class="anchor" id="a9ba1432cee77e6dd8dfb486b9b8bba0b"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:a9ba1432cee77e6dd8dfb486b9b8bba0b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-additive_multivector_transform_grammar &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:a9ba1432cee77e6dd8dfb486b9b8bba0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d611f6c7cd6737bfd9b4b953265948d"><td class="memTemplParams" colspan="2"><a class="anchor" id="a9d611f6c7cd6737bfd9b4b953265948d"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:a9d611f6c7cd6737bfd9b4b953265948d"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-additive_multivector_transform_grammar &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator+=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:a9d611f6c7cd6737bfd9b4b953265948d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7e80bdf2647b3b2658f9d3c01cdd1cc"><td class="memTemplParams" colspan="2"><a class="anchor" id="af7e80bdf2647b3b2658f9d3c01cdd1cc"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:af7e80bdf2647b3b2658f9d3c01cdd1cc"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-additive_multivector_transform_grammar &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator-=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:af7e80bdf2647b3b2658f9d3c01cdd1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a958246004f1de5f483f811a45ca15b34"><td class="memTemplParams" colspan="2"><a class="anchor" id="a958246004f1de5f483f811a45ca15b34"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:a958246004f1de5f483f811a45ca15b34"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_full_grammar &gt;<br class="typebreak"/>
-::value <br class="typebreak"/>
-&amp;&amp;!boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_expr_grammar &gt;<br class="typebreak"/>
-::value <br class="typebreak"/>
-&amp;&amp;!boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-additive_multivector_transform_grammar &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:a958246004f1de5f483f811a45ca15b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3160c1e00050b3c476c676b900dfa776"><td class="memTemplParams" colspan="2"><a class="anchor" id="a3160c1e00050b3c476c676b900dfa776"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:a3160c1e00050b3c476c676b900dfa776"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_full_grammar &gt;<br class="typebreak"/>
-::value <br class="typebreak"/>
-&amp;&amp;!boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_expr_grammar &gt;<br class="typebreak"/>
-::value <br class="typebreak"/>
-&amp;&amp;!boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-additive_multivector_transform_grammar &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator+=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:a3160c1e00050b3c476c676b900dfa776"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c40a68911c1d9862db18cbc01ef788e"><td class="memTemplParams" colspan="2"><a class="anchor" id="a2c40a68911c1d9862db18cbc01ef788e"></a>
-template&lt;class Expr &gt; </td></tr>
-<tr class="memitem:a2c40a68911c1d9862db18cbc01ef788e"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_full_grammar &gt;<br class="typebreak"/>
-::value <br class="typebreak"/>
-&amp;&amp;!boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-multivector_expr_grammar &gt;<br class="typebreak"/>
-::value <br class="typebreak"/>
-&amp;&amp;!boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-additive_multivector_transform_grammar &gt;<br class="typebreak"/>
-::value, const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp; &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator-=</b> (const Expr &amp;expr)</td></tr>
-<tr class="separator:a2c40a68911c1d9862db18cbc01ef788e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Expression assignments.</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp1441d32910602b937ad615ebb4c8fd00"></a>All operations are delegated to components of the multivector. </p>
+</td></tr>
+<tr class="memitem:a375bdfd1a0da8fef6d9cc2cc751fb090"><td class="memTemplParams" colspan="2">template&lt;class Expr &gt; </td></tr>
+<tr class="memitem:a375bdfd1a0da8fef6d9cc2cc751fb090"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvex_1_1multivector.html#a375bdfd1a0da8fef6d9cc2cc751fb090">operator=</a> (const Expr &amp;expr)</td></tr>
+<tr class="memdesc:a375bdfd1a0da8fef6d9cc2cc751fb090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiector expression assignment.  <a href="#a375bdfd1a0da8fef6d9cc2cc751fb090">More...</a><br/></td></tr>
+<tr class="separator:a375bdfd1a0da8fef6d9cc2cc751fb090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bd9f597118642fc88e3fe9d4e79aa5f"><td class="memTemplParams" colspan="2">template&lt;class Expr &gt; </td></tr>
+<tr class="memitem:a6bd9f597118642fc88e3fe9d4e79aa5f"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvex_1_1multivector.html#a6bd9f597118642fc88e3fe9d4e79aa5f">operator+=</a> (const Expr &amp;expr)</td></tr>
+<tr class="memdesc:a6bd9f597118642fc88e3fe9d4e79aa5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiector expression assignment.  <a href="#a6bd9f597118642fc88e3fe9d4e79aa5f">More...</a><br/></td></tr>
+<tr class="separator:a6bd9f597118642fc88e3fe9d4e79aa5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518c99d37ed38e6641bb6fcdcd6ac372"><td class="memTemplParams" colspan="2">template&lt;class Expr &gt; </td></tr>
+<tr class="memitem:a518c99d37ed38e6641bb6fcdcd6ac372"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvex_1_1multivector.html#a518c99d37ed38e6641bb6fcdcd6ac372">operator-=</a> (const Expr &amp;expr)</td></tr>
+<tr class="memdesc:a518c99d37ed38e6641bb6fcdcd6ac372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiector expression assignment.  <a href="#a518c99d37ed38e6641bb6fcdcd6ac372">More...</a><br/></td></tr>
+<tr class="separator:a518c99d37ed38e6641bb6fcdcd6ac372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3ec4eeacb99da81b2f89e1117110b8"><td class="memTemplParams" colspan="2">template&lt;class Expr &gt; </td></tr>
+<tr class="memitem:a2e3ec4eeacb99da81b2f89e1117110b8"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvex_1_1multivector.html#a2e3ec4eeacb99da81b2f89e1117110b8">operator*=</a> (const Expr &amp;expr)</td></tr>
+<tr class="memdesc:a2e3ec4eeacb99da81b2f89e1117110b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiector expression assignment.  <a href="#a2e3ec4eeacb99da81b2f89e1117110b8">More...</a><br/></td></tr>
+<tr class="separator:a2e3ec4eeacb99da81b2f89e1117110b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9292c577662cdbc62659057e4ce3bff0"><td class="memTemplParams" colspan="2">template&lt;class Expr &gt; </td></tr>
+<tr class="memitem:a9292c577662cdbc62659057e4ce3bff0"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvex_1_1multivector.html#a9292c577662cdbc62659057e4ce3bff0">operator/=</a> (const Expr &amp;expr)</td></tr>
+<tr class="memdesc:a9292c577662cdbc62659057e4ce3bff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiector expression assignment.  <a href="#a9292c577662cdbc62659057e4ce3bff0">More...</a><br/></td></tr>
+<tr class="separator:a9292c577662cdbc62659057e4ce3bff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa972e08100b4d9b218bb21eb39467454"><td class="memTemplParams" colspan="2">template&lt;class Expr &gt; </td></tr>
+<tr class="memitem:aa972e08100b4d9b218bb21eb39467454"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvex_1_1multivector.html#aa972e08100b4d9b218bb21eb39467454">operator%=</a> (const Expr &amp;expr)</td></tr>
+<tr class="memdesc:aa972e08100b4d9b218bb21eb39467454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiector expression assignment.  <a href="#aa972e08100b4d9b218bb21eb39467454">More...</a><br/></td></tr>
+<tr class="separator:aa972e08100b4d9b218bb21eb39467454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ffc9a5b5adf6d930b16ca1cd9f77141"><td class="memTemplParams" colspan="2">template&lt;class Expr &gt; </td></tr>
+<tr class="memitem:a5ffc9a5b5adf6d930b16ca1cd9f77141"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvex_1_1multivector.html#a5ffc9a5b5adf6d930b16ca1cd9f77141">operator&amp;=</a> (const Expr &amp;expr)</td></tr>
+<tr class="memdesc:a5ffc9a5b5adf6d930b16ca1cd9f77141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiector expression assignment.  <a href="#a5ffc9a5b5adf6d930b16ca1cd9f77141">More...</a><br/></td></tr>
+<tr class="separator:a5ffc9a5b5adf6d930b16ca1cd9f77141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab00f4f1fec629901ce40fe0764c60aba"><td class="memTemplParams" colspan="2">template&lt;class Expr &gt; </td></tr>
+<tr class="memitem:ab00f4f1fec629901ce40fe0764c60aba"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvex_1_1multivector.html#ab00f4f1fec629901ce40fe0764c60aba">operator|=</a> (const Expr &amp;expr)</td></tr>
+<tr class="memdesc:ab00f4f1fec629901ce40fe0764c60aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiector expression assignment.  <a href="#ab00f4f1fec629901ce40fe0764c60aba">More...</a><br/></td></tr>
+<tr class="separator:ab00f4f1fec629901ce40fe0764c60aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca2e7a366c9adf9b53ce8a8430c97324"><td class="memTemplParams" colspan="2">template&lt;class Expr &gt; </td></tr>
+<tr class="memitem:aca2e7a366c9adf9b53ce8a8430c97324"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvex_1_1multivector.html#aca2e7a366c9adf9b53ce8a8430c97324">operator^=</a> (const Expr &amp;expr)</td></tr>
+<tr class="memdesc:aca2e7a366c9adf9b53ce8a8430c97324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiector expression assignment.  <a href="#aca2e7a366c9adf9b53ce8a8430c97324">More...</a><br/></td></tr>
+<tr class="separator:aca2e7a366c9adf9b53ce8a8430c97324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d340631cd8b39c6b7529d0bac06a67"><td class="memTemplParams" colspan="2">template&lt;class Expr &gt; </td></tr>
+<tr class="memitem:a60d340631cd8b39c6b7529d0bac06a67"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvex_1_1multivector.html#a60d340631cd8b39c6b7529d0bac06a67">operator&lt;&lt;=</a> (const Expr &amp;expr)</td></tr>
+<tr class="memdesc:a60d340631cd8b39c6b7529d0bac06a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiector expression assignment.  <a href="#a60d340631cd8b39c6b7529d0bac06a67">More...</a><br/></td></tr>
+<tr class="separator:a60d340631cd8b39c6b7529d0bac06a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa26c668592057ffe71a0910ad97088cf"><td class="memTemplParams" colspan="2">template&lt;class Expr &gt; </td></tr>
+<tr class="memitem:aa26c668592057ffe71a0910ad97088cf"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classvex_1_1multivector.html">multivector</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvex_1_1multivector.html#aa26c668592057ffe71a0910ad97088cf">operator&gt;&gt;=</a> (const Expr &amp;expr)</td></tr>
+<tr class="memdesc:aa26c668592057ffe71a0910ad97088cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiector expression assignment.  <a href="#aa26c668592057ffe71a0910ad97088cf">More...</a><br/></td></tr>
+<tr class="separator:aa26c668592057ffe71a0910ad97088cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T, size_t N, bool own = true&gt;<br/>
@@ -555,6 +367,260 @@ template&lt;typename T, size_t N, bool own = true&gt; </div>
 
 <p>Constructor. </p>
 <p>Copies references to component vectors. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa972e08100b4d9b218bb21eb39467454"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, size_t N, bool own = true&gt; </div>
+<div class="memtemplate">
+template&lt;class Expr &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvex_1_1multivector.html">multivector</a>&amp; <a class="el" href="classvex_1_1multivector.html">vex::multivector</a>&lt; T, N, own &gt;::operator%= </td>
+          <td>(</td>
+          <td class="paramtype">const Expr &amp;&#160;</td>
+          <td class="paramname"><em>expr</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multiector expression assignment. </p>
+<p>All operations are delegated to components of the multivector. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5ffc9a5b5adf6d930b16ca1cd9f77141"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, size_t N, bool own = true&gt; </div>
+<div class="memtemplate">
+template&lt;class Expr &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvex_1_1multivector.html">multivector</a>&amp; <a class="el" href="classvex_1_1multivector.html">vex::multivector</a>&lt; T, N, own &gt;::operator&amp;= </td>
+          <td>(</td>
+          <td class="paramtype">const Expr &amp;&#160;</td>
+          <td class="paramname"><em>expr</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multiector expression assignment. </p>
+<p>All operations are delegated to components of the multivector. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2e3ec4eeacb99da81b2f89e1117110b8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, size_t N, bool own = true&gt; </div>
+<div class="memtemplate">
+template&lt;class Expr &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvex_1_1multivector.html">multivector</a>&amp; <a class="el" href="classvex_1_1multivector.html">vex::multivector</a>&lt; T, N, own &gt;::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">const Expr &amp;&#160;</td>
+          <td class="paramname"><em>expr</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multiector expression assignment. </p>
+<p>All operations are delegated to components of the multivector. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6bd9f597118642fc88e3fe9d4e79aa5f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, size_t N, bool own = true&gt; </div>
+<div class="memtemplate">
+template&lt;class Expr &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvex_1_1multivector.html">multivector</a>&amp; <a class="el" href="classvex_1_1multivector.html">vex::multivector</a>&lt; T, N, own &gt;::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const Expr &amp;&#160;</td>
+          <td class="paramname"><em>expr</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multiector expression assignment. </p>
+<p>All operations are delegated to components of the multivector. </p>
+
+</div>
+</div>
+<a class="anchor" id="a518c99d37ed38e6641bb6fcdcd6ac372"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, size_t N, bool own = true&gt; </div>
+<div class="memtemplate">
+template&lt;class Expr &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvex_1_1multivector.html">multivector</a>&amp; <a class="el" href="classvex_1_1multivector.html">vex::multivector</a>&lt; T, N, own &gt;::operator-= </td>
+          <td>(</td>
+          <td class="paramtype">const Expr &amp;&#160;</td>
+          <td class="paramname"><em>expr</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multiector expression assignment. </p>
+<p>All operations are delegated to components of the multivector. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9292c577662cdbc62659057e4ce3bff0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, size_t N, bool own = true&gt; </div>
+<div class="memtemplate">
+template&lt;class Expr &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvex_1_1multivector.html">multivector</a>&amp; <a class="el" href="classvex_1_1multivector.html">vex::multivector</a>&lt; T, N, own &gt;::operator/= </td>
+          <td>(</td>
+          <td class="paramtype">const Expr &amp;&#160;</td>
+          <td class="paramname"><em>expr</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multiector expression assignment. </p>
+<p>All operations are delegated to components of the multivector. </p>
+
+</div>
+</div>
+<a class="anchor" id="a60d340631cd8b39c6b7529d0bac06a67"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, size_t N, bool own = true&gt; </div>
+<div class="memtemplate">
+template&lt;class Expr &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvex_1_1multivector.html">multivector</a>&amp; <a class="el" href="classvex_1_1multivector.html">vex::multivector</a>&lt; T, N, own &gt;::operator&lt;&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const Expr &amp;&#160;</td>
+          <td class="paramname"><em>expr</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multiector expression assignment. </p>
+<p>All operations are delegated to components of the multivector. </p>
+
+</div>
+</div>
+<a class="anchor" id="a375bdfd1a0da8fef6d9cc2cc751fb090"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, size_t N, bool own = true&gt; </div>
+<div class="memtemplate">
+template&lt;class Expr &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvex_1_1multivector.html">multivector</a>&amp; <a class="el" href="classvex_1_1multivector.html">vex::multivector</a>&lt; T, N, own &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const Expr &amp;&#160;</td>
+          <td class="paramname"><em>expr</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multiector expression assignment. </p>
+<p>All operations are delegated to components of the multivector. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa26c668592057ffe71a0910ad97088cf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, size_t N, bool own = true&gt; </div>
+<div class="memtemplate">
+template&lt;class Expr &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvex_1_1multivector.html">multivector</a>&amp; <a class="el" href="classvex_1_1multivector.html">vex::multivector</a>&lt; T, N, own &gt;::operator&gt;&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const Expr &amp;&#160;</td>
+          <td class="paramname"><em>expr</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multiector expression assignment. </p>
+<p>All operations are delegated to components of the multivector. </p>
+
+</div>
+</div>
+<a class="anchor" id="aca2e7a366c9adf9b53ce8a8430c97324"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, size_t N, bool own = true&gt; </div>
+<div class="memtemplate">
+template&lt;class Expr &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvex_1_1multivector.html">multivector</a>&amp; <a class="el" href="classvex_1_1multivector.html">vex::multivector</a>&lt; T, N, own &gt;::operator^= </td>
+          <td>(</td>
+          <td class="paramtype">const Expr &amp;&#160;</td>
+          <td class="paramname"><em>expr</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multiector expression assignment. </p>
+<p>All operations are delegated to components of the multivector. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab00f4f1fec629901ce40fe0764c60aba"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, size_t N, bool own = true&gt; </div>
+<div class="memtemplate">
+template&lt;class Expr &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvex_1_1multivector.html">multivector</a>&amp; <a class="el" href="classvex_1_1multivector.html">vex::multivector</a>&lt; T, N, own &gt;::operator|= </td>
+          <td>(</td>
+          <td class="paramtype">const Expr &amp;&#160;</td>
+          <td class="paramname"><em>expr</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multiector expression assignment. </p>
+<p>All operations are delegated to components of the multivector. </p>
 
 </div>
 </div>
