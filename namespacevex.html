@@ -252,18 +252,10 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a0257dfd2e174677cdcb62691741a5f8c"><td class="memTemplItemLeft" align="right" valign="top">conv&lt; <a class="el" href="classvex_1_1stencil.html">stencil</a>&lt; T &gt;, <a class="el" href="classvex_1_1vector.html">vector</a>&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="classvex_1_1vector.html">vector</a>&lt; T &gt; &amp;x, const <a class="el" href="classvex_1_1stencil.html">stencil</a>&lt; T &gt; &amp;s)</td></tr>
 <tr class="separator:a0257dfd2e174677cdcb62691741a5f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af96df2c4cc011d76f6a204341cbbc87c"><td class="memTemplParams" colspan="2">template&lt;size_t Tag, class Expr &gt; </td></tr>
-<tr class="memitem:af96df2c4cc011d76f6a204341cbbc87c"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
-&lt; boost::proto::matches<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-boost::proto::result_of::as_expr<br class="typebreak"/>
-&lt; Expr &gt;::type, <br class="typebreak"/>
-boost::proto::terminal<br class="typebreak"/>
-&lt; boost::proto::_ &gt; &gt;::value, <br class="typebreak"/>
-tagged_terminal&lt; Tag, Expr &gt;<br class="typebreak"/>
-&gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevex.html#af96df2c4cc011d76f6a204341cbbc87c">tag</a> (const Expr &amp;expr)</td></tr>
-<tr class="memdesc:af96df2c4cc011d76f6a204341cbbc87c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tags terminal with a unique (in a single expression) tag.  <a href="#af96df2c4cc011d76f6a204341cbbc87c">More...</a><br/></td></tr>
-<tr class="separator:af96df2c4cc011d76f6a204341cbbc87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c1a0c1782f1070f96b485ba9d586ee"><td class="memTemplParams" colspan="2">template&lt;size_t Tag, class Expr &gt; </td></tr>
+<tr class="memitem:a06c1a0c1782f1070f96b485ba9d586ee"><td class="memTemplItemLeft" align="right" valign="top">tagged_terminal&lt; Tag, Expr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevex.html#a06c1a0c1782f1070f96b485ba9d586ee">tag</a> (const Expr &amp;expr)</td></tr>
+<tr class="memdesc:a06c1a0c1782f1070f96b485ba9d586ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tags terminal with a unique (in a single expression) tag.  <a href="#a06c1a0c1782f1070f96b485ba9d586ee">More...</a><br/></td></tr>
+<tr class="separator:a06c1a0c1782f1070f96b485ba9d586ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a498e9df37cf6d84b8c49822fcf42050e"><td class="memTemplParams" colspan="2"><a class="anchor" id="a498e9df37cf6d84b8c49822fcf42050e"></a>
 template&lt;class To , class From &gt; </td></tr>
 <tr class="memitem:a498e9df37cf6d84b8c49822fcf42050e"><td class="memTemplItemLeft" align="right" valign="top">To&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacevex.html#a498e9df37cf6d84b8c49822fcf42050e">cl_convert</a> (const From &amp;val)</td></tr>
@@ -1041,14 +1033,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af96df2c4cc011d76f6a204341cbbc87c"></a>
+<a class="anchor" id="a06c1a0c1782f1070f96b485ba9d586ee"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;size_t Tag, class Expr &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt; boost::proto::matches&lt; typename boost::proto::result_of::as_expr&lt;Expr&gt;::type, boost::proto::terminal&lt;boost::proto::_&gt; &gt;::value, tagged_terminal&lt;Tag, Expr&gt;&gt;::type vex::tag </td>
+          <td class="memname">tagged_terminal&lt;Tag, Expr&gt; vex::tag </td>
           <td>(</td>
           <td class="paramtype">const Expr &amp;&#160;</td>
           <td class="paramname"><em>expr</em>)</td><td></td>
