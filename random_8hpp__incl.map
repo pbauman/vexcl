@@ -1,4 +1,7 @@
 <map id="vexcl/random.hpp" name="vexcl/random.hpp">
-<area shape="rect" id="node3" href="$philox_8hpp.html" title="Philox random generator." alt="" coords="5,80,181,107"/>
-<area shape="rect" id="node5" href="$threefry_8hpp.html" title="Threefry random generator." alt="" coords="206,80,393,107"/>
+<area shape="rect" id="node3" href="$operations_8hpp.html" title="Templates used for expression tree traversal and kernel generation. " alt="" coords="237,80,389,107"/>
+<area shape="rect" id="node39" href="$philox_8hpp.html" title="Philox random generator. " alt="" coords="415,80,591,107"/>
+<area shape="rect" id="node41" href="$threefry_8hpp.html" title="Threefry random generator. " alt="" coords="615,80,803,107"/>
+<area shape="rect" id="node17" href="$types_8hpp.html" title="Support for using native C++ and OpenCL types in expressions. " alt="" coords="185,155,305,181"/>
+<area shape="rect" id="node22" href="$util_8hpp.html" title="OpenCL general utilities. " alt="" coords="329,155,433,181"/>
 </map>

@@ -1,15 +1,15 @@
 <map id="vexcl/mpi/spmat.hpp" name="vexcl/mpi/spmat.hpp">
-<area shape="rect" id="node11" href="$spmat_8hpp.html" title="OpenCL sparse matrix." alt="" coords="1467,80,1593,107"/>
-<area shape="rect" id="node126" href="$gather_8hpp.html" title="Gather scattered points from OpenCL device vector." alt="" coords="2325,245,2451,272"/>
-<area shape="rect" id="node129" href="$mpi_2util_8hpp.html" title="MPI related utilities." alt="" coords="123,80,255,107"/>
-<area shape="rect" id="node28" href="$vector_8hpp.html" title="OpenCL device vector." alt="" coords="1345,245,1468,272"/>
-<area shape="rect" id="node116" href="$hybrid__ell_8hpp.html" title="OpenCL sparse matrix in Hybrid ELL&#45;CSR format." alt="" coords="1677,155,1817,197"/>
-<area shape="rect" id="node118" href="$csr_8hpp.html" title="OpenCL sparse matrix in CSR format." alt="" coords="1842,163,1989,189"/>
-<area shape="rect" id="node120" href="$ccsr_8hpp.html" title="Sparse matrix in CCSR format." alt="" coords="1395,163,1551,189"/>
-<area shape="rect" id="node123" href="$inline__spmv_8hpp.html" title="Inline SpMV operation." alt="" coords="2013,155,2148,197"/>
-<area shape="rect" id="node41" href="$operations_8hpp.html" title="Set of operations to be used in vector expressions." alt="" coords="1626,320,1779,347"/>
-<area shape="rect" id="node52" href="$util_8hpp.html" title="OpenCL general utilities." alt="" coords="587,403,691,429"/>
-<area shape="rect" id="node76" href="$profiler_8hpp.html" title="Simple OpenCL/Host profiler." alt="" coords="2348,403,2476,429"/>
-<area shape="rect" id="node102" href="$devlist_8hpp.html" title="OpenCL device enumeration." alt="" coords="958,320,1084,347"/>
-<area shape="rect" id="node74" href="$types_8hpp.html" title="C++ sugar for OpenCL vector types, eg. cl_float4, operator+." alt="" coords="857,493,977,520"/>
+<area shape="rect" id="node11" href="$spmat_8hpp.html" title="OpenCL sparse matrix. " alt="" coords="2393,80,2519,107"/>
+<area shape="rect" id="node122" href="$gather_8hpp.html" title="Gather scattered points from OpenCL device vector. " alt="" coords="499,80,625,107"/>
+<area shape="rect" id="node130" href="$mpi_2util_8hpp.html" title="MPI related utilities. " alt="" coords="1013,80,1144,107"/>
+<area shape="rect" id="node26" href="$vector_8hpp.html" title="OpenCL device vector. " alt="" coords="1443,163,1567,189"/>
+<area shape="rect" id="node114" href="$hybrid__ell_8inl.html" title="OpenCL sparse matrix in Hybrid ELL&#45;CSR format. " alt="" coords="2519,155,2659,197"/>
+<area shape="rect" id="node116" href="$csr_8inl.html" title="OpenCL sparse matrix in CSR format. " alt="" coords="2684,163,2823,189"/>
+<area shape="rect" id="node118" href="$ccsr_8hpp.html" title="Sparse matrix in Compressed CSR format. " alt="" coords="2847,163,3003,189"/>
+<area shape="rect" id="node120" href="$inline__spmv_8hpp.html" title="Inline SpMV operation. " alt="" coords="3028,155,3163,197"/>
+<area shape="rect" id="node40" href="$util_8hpp.html" title="OpenCL general utilities. " alt="" coords="1276,328,1380,355"/>
+<area shape="rect" id="node55" href="$operations_8hpp.html" title="Templates used for expression tree traversal and kernel generation. " alt="" coords="413,245,565,272"/>
+<area shape="rect" id="node71" href="$profiler_8hpp.html" title="Simple OpenCL/Host profiler. " alt="" coords="2265,328,2393,355"/>
+<area shape="rect" id="node97" href="$devlist_8hpp.html" title="OpenCL device enumeration and context initialization. " alt="" coords="1605,245,1731,272"/>
+<area shape="rect" id="node66" href="$types_8hpp.html" title="Support for using native C++ and OpenCL types in expressions. " alt="" coords="1132,328,1252,355"/>
 </map>

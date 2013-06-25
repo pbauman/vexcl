@@ -1,10 +1,10 @@
 <map id="vexcl/fft.hpp" name="vexcl/fft.hpp">
-<area shape="rect" id="node5" href="$vector_8hpp.html" title="OpenCL device vector." alt="" coords="1026,155,1149,181"/>
-<area shape="rect" id="node99" href="$plan_8hpp.html" title="FFT plan, stores kernels and buffers for one configuration." alt="" coords="1930,80,2059,107"/>
-<area shape="rect" id="node23" href="$operations_8hpp.html" title="Set of operations to be used in vector expressions." alt="" coords="611,229,764,256"/>
-<area shape="rect" id="node34" href="$util_8hpp.html" title="OpenCL general utilities." alt="" coords="920,312,1024,339"/>
-<area shape="rect" id="node59" href="$profiler_8hpp.html" title="Simple OpenCL/Host profiler." alt="" coords="1931,312,2059,339"/>
-<area shape="rect" id="node85" href="$devlist_8hpp.html" title="OpenCL device enumeration." alt="" coords="1265,229,1391,256"/>
-<area shape="rect" id="node57" href="$types_8hpp.html" title="C++ sugar for OpenCL vector types, eg. cl_float4, operator+." alt="" coords="923,403,1043,429"/>
-<area shape="rect" id="node107" href="$kernels_8hpp.html" title="Kernel generator for FFT." alt="" coords="2270,155,2417,181"/>
+<area shape="rect" id="node5" href="$vector_8hpp.html" title="OpenCL device vector. " alt="" coords="1034,155,1157,181"/>
+<area shape="rect" id="node98" href="$plan_8hpp.html" title="FFT plan, stores kernels and buffers for one configuration. " alt="" coords="2023,80,2152,107"/>
+<area shape="rect" id="node23" href="$util_8hpp.html" title="OpenCL general utilities. " alt="" coords="946,312,1050,339"/>
+<area shape="rect" id="node39" href="$operations_8hpp.html" title="Templates used for expression tree traversal and kernel generation. " alt="" coords="612,229,765,256"/>
+<area shape="rect" id="node55" href="$profiler_8hpp.html" title="Simple OpenCL/Host profiler. " alt="" coords="2005,312,2133,339"/>
+<area shape="rect" id="node81" href="$devlist_8hpp.html" title="OpenCL device enumeration and context initialization. " alt="" coords="1098,229,1224,256"/>
+<area shape="rect" id="node50" href="$types_8hpp.html" title="Support for using native C++ and OpenCL types in expressions. " alt="" coords="264,312,384,339"/>
+<area shape="rect" id="node106" href="$kernels_8hpp.html" title="Kernel generator for FFT. " alt="" coords="2363,155,2510,181"/>
 </map>

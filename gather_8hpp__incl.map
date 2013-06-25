@@ -1,2 +1,8 @@
 <map id="vexcl/gather.hpp" name="vexcl/gather.hpp">
+<area shape="rect" id="node9" href="$operations_8hpp.html" title="Templates used for expression tree traversal and kernel generation. " alt="" coords="427,155,580,181"/>
+<area shape="rect" id="node44" href="$vector_8hpp.html" title="OpenCL device vector. " alt="" coords="1571,80,1695,107"/>
+<area shape="rect" id="node23" href="$types_8hpp.html" title="Support for using native C++ and OpenCL types in expressions. " alt="" coords="492,237,612,264"/>
+<area shape="rect" id="node28" href="$util_8hpp.html" title="OpenCL general utilities. " alt="" coords="687,237,791,264"/>
+<area shape="rect" id="node59" href="$profiler_8hpp.html" title="Simple OpenCL/Host profiler. " alt="" coords="2040,237,2168,264"/>
+<area shape="rect" id="node85" href="$devlist_8hpp.html" title="OpenCL device enumeration and context initialization. " alt="" coords="977,155,1103,181"/>
 </map>

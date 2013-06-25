@@ -1,5 +1,5 @@
 <map id="vexcl/generator.hpp" name="vexcl/generator.hpp">
-<area shape="rect" id="node23" href="$util_8hpp.html" title="OpenCL general utilities." alt="" coords="805,88,909,115"/>
-<area shape="rect" id="node51" href="$operations_8hpp.html" title="Set of operations to be used in vector expressions." alt="" coords="1630,88,1783,115"/>
-<area shape="rect" id="node49" href="$types_8hpp.html" title="C++ sugar for OpenCL vector types, eg. cl_float4, operator+." alt="" coords="989,179,1109,205"/>
+<area shape="rect" id="node23" href="$util_8hpp.html" title="OpenCL general utilities. " alt="" coords="348,171,452,197"/>
+<area shape="rect" id="node40" href="$operations_8hpp.html" title="Templates used for expression tree traversal and kernel generation. " alt="" coords="598,88,751,115"/>
+<area shape="rect" id="node51" href="$types_8hpp.html" title="Support for using native C++ and OpenCL types in expressions. " alt="" coords="153,171,273,197"/>
 </map>

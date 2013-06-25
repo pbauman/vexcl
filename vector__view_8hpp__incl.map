@@ -1,8 +1,8 @@
 <map id="vexcl/vector_view.hpp" name="vexcl/vector_view.hpp">
-<area shape="rect" id="node9" href="$vector_8hpp.html" title="OpenCL device vector." alt="" coords="1901,80,2024,107"/>
-<area shape="rect" id="node27" href="$operations_8hpp.html" title="Set of operations to be used in vector expressions." alt="" coords="1813,155,1965,181"/>
-<area shape="rect" id="node37" href="$util_8hpp.html" title="OpenCL general utilities." alt="" coords="2287,237,2391,264"/>
-<area shape="rect" id="node61" href="$profiler_8hpp.html" title="Simple OpenCL/Host profiler." alt="" coords="1229,237,1357,264"/>
-<area shape="rect" id="node88" href="$devlist_8hpp.html" title="OpenCL device enumeration." alt="" coords="2387,155,2513,181"/>
-<area shape="rect" id="node59" href="$types_8hpp.html" title="C++ sugar for OpenCL vector types, eg. cl_float4, operator+." alt="" coords="2689,328,2809,355"/>
+<area shape="rect" id="node15" href="$vector_8hpp.html" title="OpenCL device vector. " alt="" coords="1039,80,1162,107"/>
+<area shape="rect" id="node30" href="$util_8hpp.html" title="OpenCL general utilities. " alt="" coords="944,237,1048,264"/>
+<area shape="rect" id="node45" href="$operations_8hpp.html" title="Templates used for expression tree traversal and kernel generation. " alt="" coords="542,155,694,181"/>
+<area shape="rect" id="node60" href="$profiler_8hpp.html" title="Simple OpenCL/Host profiler. " alt="" coords="1933,237,2061,264"/>
+<area shape="rect" id="node87" href="$devlist_8hpp.html" title="OpenCL device enumeration and context initialization. " alt="" coords="1234,155,1360,181"/>
+<area shape="rect" id="node55" href="$types_8hpp.html" title="Support for using native C++ and OpenCL types in expressions. " alt="" coords="749,237,869,264"/>
 </map>
