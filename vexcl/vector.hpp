@@ -330,6 +330,7 @@ class vector : public vector_terminal_expression {
             : queue(v.queue), part(v.part),
               buf(queue.size()), event(queue.size())
         {
+            std::cout << "Copy!" << std::endl;
             if (size()) allocate_buffers(CL_MEM_READ_WRITE, 0);
             *this = v;
         }
@@ -382,6 +383,7 @@ class vector : public vector_terminal_expression {
 
         /// Move constructor
         vector(vector &&v) {
+            std::cout << "Move!" << std::endl;
             swap(v);
         }
 
