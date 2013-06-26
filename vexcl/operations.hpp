@@ -411,6 +411,9 @@ struct user_function {};
             boost::proto::bitwise_and   < grammar, grammar >, \
             boost::proto::bitwise_or    < grammar, grammar >, \
             boost::proto::bitwise_xor   < grammar, grammar > \
+        >, \
+        boost::proto::or_< \
+            boost::proto::if_else_< grammar, grammar, grammar > \
         > \
     >, \
     boost::proto::function< \
@@ -538,6 +541,7 @@ BUILTIN_FUNCTION_1(log1p);
 BUILTIN_FUNCTION_1(logb);
 BUILTIN_FUNCTION_3(mad);
 BUILTIN_FUNCTION_2(max);
+BUILTIN_FUNCTION_2(min);
 BUILTIN_FUNCTION_2(maxmag);
 BUILTIN_FUNCTION_2(minmag);
 BUILTIN_FUNCTION_2(modf);
@@ -592,8 +596,6 @@ abs(const Arg &arg) {
             boost::ref(arg)
             );
 }
-
-
 
 #define VEXCL_VECTOR_EXPR_EXTRACTOR(name, VG, AG, FG) \
 struct name \
@@ -1185,6 +1187,20 @@ struct vector_expr_context : public expression_context {
     UNARY_POST_OPERATION(post_dec, --);
 
 #undef UNARY_POST_OPERATION
+
+    template <typename Expr>
+    struct eval<Expr, boost::proto::tag::if_else_> {
+        typedef void result_type;
+        void operator()(const Expr &expr, vector_expr_context &ctx) const {
+            ctx.os << "( ";
+            boost::proto::eval(boost::proto::child_c<0>(expr), ctx);
+            ctx.os << " ? ";
+            boost::proto::eval(boost::proto::child_c<1>(expr), ctx);
+            ctx.os << " : ";
+            boost::proto::eval(boost::proto::child_c<2>(expr), ctx);
+            ctx.os << " )";
+        }
+    };
 
     template <typename Expr>
     struct eval<Expr, boost::proto::tag::function> {
